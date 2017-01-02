@@ -1,0 +1,8 @@
+.header__logo {
+  &:after {
+    height: 100%;
+    display: inline-block;
+    content: "";
+    vertical-align: middle;
+  }
+}
