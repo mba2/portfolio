@@ -93,7 +93,6 @@ module.exports = function(grunt){
           "imagesDir"   : '<%= dirs.development %>/img',
           "sassDir"     : "<%= dirs.development %>/sass",
           "cssDir"      : '<%= dirs.production  %>/temp/css',
-          "environment"  : "development"
         }
       }
     },
@@ -182,10 +181,9 @@ module.exports = function(grunt){
                   "finalTasks"
                 ]
       },
-      stylesheets : {
+      sass : {
         files : [
-                  "dev/sass/**/*.scss",
-                  "dev/css/**/*.css",
+                 "<%= dirs.development %>/sass/**/*.scss",
                 ],
         tasks : [
                 "compass",
@@ -193,9 +191,18 @@ module.exports = function(grunt){
                  "clean:temp"
                 ]
       },
+      css : {
+        files : [
+                  "<%= dirs.development %>/css"
+                ],
+        tasks : [
+                  "copy:"
+                ]
+      },
       js : {
         files: '<%= dirs.development %>/js/**/*.js',
-        tasks: ["uglify:" + (assetsMode || "single_file"),
+        tasks: [
+                "uglify:" + (assetsMode || "single_file"),
                 "clean:temp"
                ]
       },
@@ -223,18 +230,19 @@ module.exports = function(grunt){
   grunt.loadNpmTasks("grunt-contrib-compass");
   grunt.loadNpmTasks("grunt-spritesmith");
 
+
   grunt.registerTask("finalTasks",[
     "copy",
     "injector",
-    // "clean:temp",
+    "clean:temp",
     "watch"
   ]);
+
 
   var mainTasks = [
     "clean:build",
     "sprite",
     "compass",
-    // "sass",
     "cssmin:" + ( assetsMode || "single_file" ),
     "uglify:" + ( assetsMode || "single_file" ),
     'imagemin',
