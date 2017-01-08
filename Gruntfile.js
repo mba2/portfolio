@@ -2,6 +2,39 @@ module.exports = function(grunt){
   //TWO AVALIABLE VALUES FOR 'assets_mode': A string  named "single_file" or "multiple_files"
   var assetsMode = "single_file";
 
+  var taskComplement = {
+    "init" : function(){
+            this.css();
+            this.image();
+    },
+    "addEvent" : function(event){
+      return grunt.event.on(event, function(action,filePath,callback){
+        // callback
+      });
+    },
+    "css" : function(){
+      // this.addEvent("watch");
+    },
+    "image" : function() {
+      // this.addEvent("watch",);
+      grunt.event.on("watch",function(option,filePath){
+        if(grunt.file.isMatch(grunt.config("watch.images.files"),filePath)) {
+          grunt.config("imagemin.test.dest", "<%= dirs.production %>/test" );
+          grunt.config("imagemin.test.src", 'dev/img/isJPG.jpg');
+          // grunt.config("imagemin.test.src", "<%= dirs.development %>/img/*.{png,gif,jpg}" );
+          grunt.log.writeln(grunt.config("imagemin.test.dest"));
+          grunt.log.writeln(grunt.config( typeof "imagemin.test.src"));
+            // grunt.log.writeln("catched");
+            // grunt.config("imagemin.test.dest", "adssa");
+            // grunt.log.writeln(grunt.config("imagemin.all.src"));
+            // grunt.log.writeln(grunt.config("imagemin.build.dest"));
+            // grunt.log.writeln(grunt.config("imagemin.test.dest"));
+        }
+      });
+    }
+  };
+
+
   grunt.initConfig({
     dirs : {
       development : 'dev',
@@ -30,11 +63,15 @@ module.exports = function(grunt){
       build : {
         src : '<%= dirs.production %>'
       },
-      temp : {
+      temp  : {
         src: '<%= dirs.production %>/temp'
+      },
+      "img" : {
+        "src" : "<%= dirs.production %>/img"
       }
     },
-    sass : {
+
+    "sass" : {
       "build" : {
         options : {
           update : true,
@@ -53,14 +90,15 @@ module.exports = function(grunt){
     "compass" : {
       "dist" : {
         "options" : {
-          "sassDir" : "<%= dirs.development%>/sass",
-          "cssDir": '<%= dirs.production %>/temp/css',
+          "imagesDir"   : '<%= dirs.development %>/img',
+          "sassDir"     : "<%= dirs.development %>/sass",
+          "cssDir"      : '<%= dirs.production  %>/temp/css',
+          "environment"  : "development"
         }
       }
     },
 
-
-    cssmin :{
+  "cssmin" :{
       "single_file" : {
         files : {
           "<%= dirs.production %>/css/app.css" : "<%= dirs.production %>/temp/css/**/*.css"
@@ -76,7 +114,22 @@ module.exports = function(grunt){
         }]
       }
     },
-    uglify : {
+
+    "sprite" : {
+      "build" : {
+        "src"         : "<%= dirs.development %>/img/sprite/*.png",
+        "dest"        : "<%= dirs.development %>/img/test.png",
+        "destCss"     : "<%= dirs.development %>/sass/_sprites.scss",
+        "cssFormat"   : "scss",
+        "padding"     : 2,
+        "spriteName"  : 'build',
+        // imgPath: (function() {
+        //     return ''+ "<%= dirs.production %>/img" + '/x-sprite-fnac.png?' + Math.random();
+        // }())
+      }
+    },
+
+    "uglify" : {
       "single_file" : {
         files : {
           "<%= dirs.production %>/js/app.js" : ["<%= dirs.development %>/js/**/*.js"]
@@ -121,39 +174,40 @@ module.exports = function(grunt){
 
     watch : {
       html : {
-        options : {
-          event : ["added","changed","deleted"]
-        },
+        // options : {
+        //   event : ["added","changed","deleted"]
+        // },
         files : "<%= dirs.development %>/*.php",
         tasks : [
                   "finalTasks"
                 ]
       },
-      css : {
-        options: {
-          event : ['added','changed']
-        },
-        files : "dev/sass/**/*.scss",
-        tasks : ["compass",
+      stylesheets : {
+        files : [
+                  "dev/sass/**/*.scss",
+                  "dev/css/**/*.css",
+                ],
+        tasks : [
+                "compass",
                  "cssmin:" + (assetsMode || "single_file"),
                  "clean:temp"
                 ]
       },
       js : {
-        options : {
-          event : ['added','changed']
-        },
-        files: 'dev/js/**/*.js',
+        files: '<%= dirs.development %>/js/**/*.js',
         tasks: ["uglify:" + (assetsMode || "single_file"),
                 "clean:temp"
                ]
       },
       images : {
-        options : {
-          event: ['added','changed','deleted']
-        },
-        files : ['dev/img/*.{png,jpg,gif}'],
-        tasks : ['imagemin']
+        files : ['<%= dirs.development %>/img/**/*.{png,jpg,gif}'],
+        tasks : [
+                  "sprite",
+                  "clean:img",        // REMOVE PREVIOUS IMAGES
+                ],
+          options: {
+          spawn: false
+        }
       }
     }
 });
@@ -167,22 +221,29 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-injector');
   grunt.loadNpmTasks("grunt-contrib-compass");
+  grunt.loadNpmTasks("grunt-spritesmith");
 
   grunt.registerTask("finalTasks",[
     "copy",
     "injector",
-    "clean:temp"
+    // "clean:temp",
+    "watch"
   ]);
 
   var mainTasks = [
     "clean:build",
-    "sass",
-    'imagemin',
+    "sprite",
+    "compass",
+    // "sass",
     "cssmin:" + ( assetsMode || "single_file" ),
     "uglify:" + ( assetsMode || "single_file" ),
+    'imagemin',
     "finalTasks",
-    "watch"
   ];
 
   grunt.registerTask('default',mainTasks);
 };
+
+
+// INSERT, DELETE OR UPDATE SCSS FILES => OK
+// INSERT, DELETE OR UPDATE CSS FILES => PENDING
