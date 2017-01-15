@@ -14,3 +14,7 @@ p {
   color: red;
   @include single-box-shadow;
 }
+
+span:after {
+  content: "Made on master - 02";
+}
