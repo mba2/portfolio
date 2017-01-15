@@ -20,5 +20,9 @@ span:after {
 }
 
 footer: {
-  content: "made on footer";  
+  content: "made on footer";
+
+div::before {
+ content: "Made on master -03";
+
 }
