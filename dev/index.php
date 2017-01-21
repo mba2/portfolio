@@ -21,9 +21,13 @@
     </header>
 
     <main class="main-content">
-
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-      <span>Made on master - 04</span>
+      <h1>afsad asd asd asdsadag sd gsdgsd</h1>
+      <p>Lorem <span class="strong-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+      <p>Lorem <span class="em-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+      <p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+      <p>Lorem <em>ipsum</em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+      <p>Lorem <strong><em>ipsum</em></strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+      <p>Lorem <em><strong>ipsum</strong></em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
     </main>
   </div>
 

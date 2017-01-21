@@ -1,28 +1,39 @@
 @import "compass/css3",
         "generics",
         "normalize",
+        "fonts/font-test-older-ie",
         "fonts/font-test",
+        "fonts/fonts",
         "helpers/mixins",
         "helpers/placeholders";
 
 @import "blocks/header/header";
 
+
+
 p {
   font-size: 30px;
-  font-family: "Gentleman";
   text-transform: uppercase;
   color: red;
   @include single-box-shadow;
 }
 
-span:after {
-  content: "Made on master - 02";
+
+
+h1 {
+  font-family: "Caviar";
 }
 
-footer: {
-  content: "made on footer";
-
-div::before {
- content: "Made on master -03";
-
-}
+// //font - tests
+// .em-tes {
+//   font-family: "CaviarItalic";
+// }
+// //
+// .strong-tes {
+//   font-family:"CaviarBold";
+// }
+//
+// strong em,
+// em strong {
+//   font-family: "CaviarBoldItalic"
+// }
