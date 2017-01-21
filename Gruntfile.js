@@ -2,39 +2,6 @@ module.exports = function(grunt){
   //TWO AVALIABLE VALUES FOR 'assets_mode': A string  named "single_file" or "multiple_files"
   var assetsMode = "single_file";
 
-  var taskComplement = {
-    "init" : function(){
-            this.css();
-            this.image();
-    },
-    "addEvent" : function(event){
-      return grunt.event.on(event, function(action,filePath,callback){
-        // callback
-      });
-    },
-    "css" : function(){
-      // this.addEvent("watch");
-    },
-    "image" : function() {
-      // this.addEvent("watch",);
-      grunt.event.on("watch",function(option,filePath){
-        if(grunt.file.isMatch(grunt.config("watch.images.files"),filePath)) {
-          grunt.config("imagemin.test.dest", "<%= dirs.production %>/test" );
-          grunt.config("imagemin.test.src", 'dev/img/isJPG.jpg');
-          // grunt.config("imagemin.test.src", "<%= dirs.development %>/img/*.{png,gif,jpg}" );
-          grunt.log.writeln(grunt.config("imagemin.test.dest"));
-          grunt.log.writeln(grunt.config( typeof "imagemin.test.src"));
-            // grunt.log.writeln("catched");
-            // grunt.config("imagemin.test.dest", "adssa");
-            // grunt.log.writeln(grunt.config("imagemin.all.src"));
-            // grunt.log.writeln(grunt.config("imagemin.build.dest"));
-            // grunt.log.writeln(grunt.config("imagemin.test.dest"));
-        }
-      });
-    }
-  };
-
-
   grunt.initConfig({
     dirs : {
       development : 'dev',
@@ -46,7 +13,7 @@ module.exports = function(grunt){
           {
             expand: true,
             cwd  : '<%= dirs.development %>',
-            src  : '*.php',
+            src  : ["*.php","*.html"],
             dest : '<%= dirs.production %>'
           },
           {
@@ -172,13 +139,16 @@ module.exports = function(grunt){
     },
 
     watch : {
-      html : {
+      "html_PHP" : {
         // options : {
         //   event : ["added","changed","deleted"]
         // },
-        files : "<%= dirs.development %>/*.php",
+        files : [
+                  "<%= dirs.development %>/*.php",
+                  "<%= dirs.development %>/*.html"
+                ],
         tasks : [
-                  "finalTasks"
+                  "copy","injector","watch"
                 ]
       },
       sass : {
