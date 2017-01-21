@@ -95,16 +95,11 @@ module.exports = function(grunt){
           "imagesDir"   : '<%= dirs.development %>/img',
           "sassDir"     : "<%= dirs.development %>/sass",
           "cssDir"      : '<%= dirs.production  %>/temp/css',
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
-=======
-          "environment"  : "development"
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
         }
       }
     },
 
   "cssmin" :{
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
     "options" : {
       "sourceMap" : true
     },
@@ -137,39 +132,6 @@ module.exports = function(grunt){
         // }())
       }
     },
-
-=======
-      "single_file" : {
-        files : {
-          "<%= dirs.production %>/css/app.css" : "<%= dirs.production %>/temp/css/**/*.css"
-        }
-      },
-      "multiple_files" : {
-        files : [{
-          expand: true,
-          cwd : "<%= dirs.production %>/temp/css",
-          src : "**/*.css",
-          dest: "<%= dirs.production %>/css",
-          ext : ".css"
-        }]
-      }
-    },
-
-    "sprite" : {
-      "build" : {
-        "src"         : "<%= dirs.development %>/img/sprite/*.png",
-        "dest"        : "<%= dirs.development %>/img/test.png",
-        "destCss"     : "<%= dirs.development %>/sass/_sprites.scss",
-        "cssFormat"   : "scss",
-        "padding"     : 2,
-        "spriteName"  : 'build',
-        // imgPath: (function() {
-        //     return ''+ "<%= dirs.production %>/img" + '/x-sprite-fnac.png?' + Math.random();
-        // }())
-      }
-    },
-
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
     "uglify" : {
       "single_file" : {
         files : {
@@ -214,7 +176,6 @@ module.exports = function(grunt){
     },
 
     watch : {
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
       "html_PHP" : {
         // options : {
         //   event : ["added","changed","deleted"]
@@ -223,27 +184,14 @@ module.exports = function(grunt){
                   "<%= dirs.development %>/*.php",
                   "<%= dirs.development %>/*.html"
                 ],
-=======
-      html : {
-        // options : {
-        //   event : ["added","changed","deleted"]
-        // },
-        files : "<%= dirs.development %>/*.php",
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
         tasks : [
                   "copy","injector","watch"
                 ]
       },
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
-      sass : {
-        files : [
-                 "<%= dirs.development %>/sass/**/*.scss",
-=======
       stylesheets : {
         files : [
                   "dev/sass/**/*.scss",
                   "dev/css/**/*.css",
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
                 ],
         tasks : [
                 "compass",
@@ -261,12 +209,7 @@ module.exports = function(grunt){
       },
       js : {
         files: '<%= dirs.development %>/js/**/*.js',
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
-        tasks: [
-                "uglify:" + (assetsMode || "single_file"),
-=======
         tasks: ["uglify:" + (assetsMode || "single_file"),
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
                 "clean:temp"
                ]
       },
@@ -293,19 +236,11 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-injector');
   grunt.loadNpmTasks("grunt-contrib-compass");
   grunt.loadNpmTasks("grunt-spritesmith");
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
-
-=======
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
 
   grunt.registerTask("finalTasks",[
     "copy",
     "injector",
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
-    "clean:temp",
-=======
     // "clean:temp",
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
     "watch"
   ]);
 
@@ -314,10 +249,6 @@ module.exports = function(grunt){
     "clean:build",
     "sprite",
     "compass",
-<<<<<<< bf316132a52cf83ad83ebf6a26573f823158ccb4
-=======
-    // "sass",
->>>>>>> SCSS WACTH: DELETE, EDIT AND ADD
     "cssmin:" + ( assetsMode || "single_file" ),
     "uglify:" + ( assetsMode || "single_file" ),
     'imagemin',
