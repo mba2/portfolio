@@ -65,21 +65,24 @@ module.exports = function(grunt){
     },
 
   "cssmin" :{
-      "single_file" : {
-        files : {
-          "<%= dirs.production %>/css/app.css" : "<%= dirs.production %>/temp/css/**/*.css"
-        }
-      },
-      "multiple_files" : {
-        files : [{
-          expand: true,
-          cwd : "<%= dirs.production %>/temp/css",
-          src : "**/*.css",
-          dest: "<%= dirs.production %>/css",
-          ext : ".css"
-        }]
+    "options" : {
+      "sourceMap" : true
+    },
+    "single_file" : {
+      files : {
+        "<%= dirs.production %>/css/app.css" : "<%= dirs.production %>/temp/css/**/*.css"
       }
     },
+    "multiple_files" : {
+      files : [{
+        expand: true,
+        cwd : "<%= dirs.production %>/temp/css",
+        src : "**/*.css",
+        dest: "<%= dirs.production %>/css",
+        ext : ".css"
+      }]
+    }
+  },
 
     "sprite" : {
       "build" : {
