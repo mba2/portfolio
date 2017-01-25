@@ -90,7 +90,7 @@ module.exports = function(grunt){
       "build" : {
         "src"         : "<%= dirs.development %>/img/sprite/*.png",
         "dest"        : "<%= dirs.development %>/img/test.png",
-        "destCss"     : "<%= dirs.development %>/sass/_sprites.scss",
+        "destCss"     : "<%= dirs.development %>/smacss/_sprites.scss",
         "cssFormat"   : "scss",
         "padding"     : 2,
         "spriteName"  : 'build',
