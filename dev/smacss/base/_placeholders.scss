@@ -1,3 +1,9 @@
+%extend clearfix {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 %hideText {
   text-indent: -9999px;
   overflow: hidden;
