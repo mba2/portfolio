@@ -1,0 +1,31 @@
+@import "compass/css3",
+  "sprites",
+  "import";
+
+p {
+  font-size: 30px;
+  font-family: "Gentleman";
+  text-transform: uppercase;
+  color: red;
+  @include single-box-shadow;
+}
+
+
+
+h1 {
+  font-family: "Caviar";
+}
+
+// //font - tests
+// .em-tes {
+//   font-family: "CaviarItalic";
+// }
+// //
+// .strong-tes {
+//   font-family:"CaviarBold";
+// }
+//
+// strong em,
+// em strong {
+//   font-family: "CaviarBoldItalic"
+// }
