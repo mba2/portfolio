@@ -65,6 +65,29 @@ module.exports = function(grunt){
         }
       }
     },
+    //
+    // "sass_compile_imports" : {
+    //   "compile" : {
+    //     options : {
+    //       quiet : false
+    //     },
+    //     "target" : "<%= dirs.development %>/smacss/_import.scss",
+    //     files : [{
+    //       expand : true,
+    //       cwd : "<%= dirs.development %>/smacss/",
+    //       src : ["!_import.scss", "btn.scss"]
+    //     }]
+    //   }
+    // },
+
+    sass_import: {
+       options: {},
+       dist: {
+         files: {
+           'dev/smacss/_import.scss': ["dev/smacss/modules/*"]
+         }
+       },
+     },
 
   "cssmin" :{
     "options" : {
@@ -157,14 +180,15 @@ module.exports = function(grunt){
       },
       stylesheets : {
         files : [
-                  "dev/sass/**/*.scss",
+                  "dev/smacss/**/*.scss",
                   "dev/css/**/*.css",
                 ],
         tasks : [
-                "compass",
-                 "cssmin:" + (assetsMode || "single_file"),
-                 "clean:temp"
-                ]
+          "sass_import",
+          "compass",
+           "cssmin:" + (assetsMode || "single_file"),
+           "clean:temp"
+          ]
       },
       css : {
         files : [
@@ -203,6 +227,7 @@ module.exports = function(grunt){
   grunt.loadNpmTasks('grunt-injector');
   grunt.loadNpmTasks("grunt-contrib-compass");
   grunt.loadNpmTasks("grunt-spritesmith");
+  grunt.loadNpmTasks("grunt-sass-import");
 
   grunt.registerTask("finalTasks",[
     "copy",
@@ -214,7 +239,8 @@ module.exports = function(grunt){
 
   var mainTasks = [
     "clean:build",
-    "sprite",
+    // "sprite",
+    "sass_import",
     "compass",
     "cssmin:" + ( assetsMode || "single_file" ),
     "uglify:" + ( assetsMode || "single_file" ),
