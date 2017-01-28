@@ -13,8 +13,8 @@
 <body>
 
   <div class="main-wrapper">
-    <header class="header">
-      <button id="menu-btn_js" class="menu-btn mobile-elem">
+    <header class="l-header">
+      <button id="menu-btn_js" class="btn btn-menu mobile-elem">
         <span id="menu-btn__text_js" class="menu-btn__text">menu</span>
       </button>
       <a class="logo header__logo" href="#">Mario Brusarosco</a>
