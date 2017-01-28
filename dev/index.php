@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <div class="main-wrapper">
+  <div class="l-mainWrapper">
     <header class="l-header">
       <button id="menu-btn_js" class="btn btn-menu mobile-elem">
         <span id="menu-btn__text_js" class="menu-btn__text">menu</span>
@@ -20,7 +20,7 @@
       <a class="logo header__logo" href="#">Mario Brusarosco</a>
     </header>
 
-    <main class="main-content">
+    <main class="l-mainContent">
       <h1>afsad asd asd asdsadag sd gsdgsd</h1>
       <p>Lorem <span class="strong-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
       <p>Lorem <span class="em-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
