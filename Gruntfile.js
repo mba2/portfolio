@@ -84,7 +84,13 @@ module.exports = function(grunt){
        options: {},
        dist: {
          files: {
-           'dev/smacss/_import.scss': ["dev/smacss/modules/*"]
+           '<%= dirs.development %>/smacss/_import.scss': [
+             "<%= dirs.development %>/smacss/base/**/*",
+             "<%= dirs.development %>/smacss/layout/**/*",
+             "<%= dirs.development %>/smacss/modules/**/*",
+             "<%= dirs.development %>/smacss/state/**/*",
+             "<%= dirs.development %>/smacss/themes/**/*"
+           ]
          }
        },
      },
