@@ -65,21 +65,6 @@ module.exports = function(grunt){
         }
       }
     },
-    //
-    // "sass_compile_imports" : {
-    //   "compile" : {
-    //     options : {
-    //       quiet : false
-    //     },
-    //     "target" : "<%= dirs.development %>/smacss/_import.scss",
-    //     files : [{
-    //       expand : true,
-    //       cwd : "<%= dirs.development %>/smacss/",
-    //       src : ["!_import.scss", "btn.scss"]
-    //     }]
-    //   }
-    // },
-
     sass_import: {
        options: {},
        dist: {
@@ -173,9 +158,6 @@ module.exports = function(grunt){
 
     watch : {
       "html_PHP" : {
-        // options : {
-        //   event : ["added","changed","deleted"]
-        // },
         files : [
                   "<%= dirs.development %>/*.php",
                   "<%= dirs.development %>/*.html"
@@ -238,14 +220,14 @@ module.exports = function(grunt){
   grunt.registerTask("finalTasks",[
     "copy",
     "injector",
-    // "clean:temp",
+    "clean:temp",
     "watch"
   ]);
 
 
   var mainTasks = [
     "clean:build",
-    // "sprite",
+    "sprite",
     "sass_import",
     "compass",
     "cssmin:" + ( assetsMode || "single_file" ),
