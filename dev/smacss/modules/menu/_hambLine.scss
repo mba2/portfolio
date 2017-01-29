@@ -12,6 +12,7 @@
     }
   }
   &-center {
+    transition: all 1s cubic-bezier(0.9, 0, 0.04, 1.19);
     .menu-is-opened & {
       transform: translate(-100vw,0);
     }
