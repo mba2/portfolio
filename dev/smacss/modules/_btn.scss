@@ -1,6 +1,44 @@
 .btn {
-  color: red;
+  background: none;
+  display: inline-block;
+  border: none;
+  outline: none;
   &-menu {
+    height: 100%;
+    width: 70px;
+    border-right: 1px solid #000;
+    line-height: 0.75em;
+  }
+  &-text {}
+  &-menuText {
+    margin-top: 13px;
+    display: block;
+    position: relative;
+    &-opened,
+    &-closed {
+      display: inline-block;
+      transition:
+        transform .4s ease-in-out,
+        opacity .2s .2s ease-in-out;
+    }
+    &-opened {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      .menu-is-opened & {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-10px);
+      }
+    }
+    &-closed {
+      transform: translateY(0px);
 
+      .menu-is-opened & {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-30px);
+      }
+    }
   }
 }

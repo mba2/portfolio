@@ -210,7 +210,7 @@ module.exports = function(grunt){
 
   var mainTasks = [
     "clean:build",
-    "sprite",
+    // "sprite",
     "sass_import",
     "compass",
     "cssmin:" + ( assetsMode || "single_file" ),
