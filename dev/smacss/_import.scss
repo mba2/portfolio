@@ -1,8 +1,13 @@
 @import 'base/_generics';
 @import 'base/_mixins';
 @import 'base/_mobile';
+<<<<<<< HEAD
 @import 'base/_normalize';
 @import 'base/_placeholders';
+=======
+@import 'base/_placeholders';
+@import 'base/_reset';
+>>>>>>> header
 @import 'base/_sprites';
 @import 'base/fonts/_font-test-older-ie';
 @import 'base/fonts/_font-test';
@@ -11,6 +16,7 @@
 @import 'layout/_header';
 @import 'layout/_wrappers';
 @import 'modules/_btn';
+<<<<<<< HEAD
 @import 'modules/header/_header__logo';
 @import 'modules/header/_header__menu';
 @import 'modules/header/_header-fixed';
@@ -20,3 +26,9 @@
 @import 'modules/menu/_menu-wrapper';
 @import 'modules/menu/_menu';
 @import 'modules/wrapper/_wrapper';
+=======
+@import 'modules/logo/_logo-wrapper';
+@import 'modules/logo/_logo';
+@import 'modules/menu/_hambLine';
+@import 'modules/menu/_menu';
+>>>>>>> header
