@@ -48,24 +48,6 @@ module.exports = function(grunt){
         }
       }
     },
-<<<<<<< HEAD
-=======
-    //
-    // "sass_compile_imports" : {
-    //   "compile" : {
-    //     options : {
-    //       quiet : false
-    //     },
-    //     "target" : "<%= dirs.development %>/smacss/_import.scss",
-    //     files : [{
-    //       expand : true,
-    //       cwd : "<%= dirs.development %>/smacss/",
-    //       src : ["!_import.scss", "btn.scss"]
-    //     }]
-    //   }
-    // },
-
->>>>>>> header
     sass_import: {
        options: {},
        dist: {
@@ -228,11 +210,7 @@ module.exports = function(grunt){
 
   var mainTasks = [
     "clean:build",
-<<<<<<< HEAD
-    "sprite",
-=======
     // "sprite",
->>>>>>> header
     "sass_import",
     "compass",
     "cssmin:" + ( assetsMode || "single_file" ),
