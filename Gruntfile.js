@@ -39,23 +39,6 @@ module.exports = function(grunt){
         "src" : "<%= dirs.production %>/img"
       }
     },
-
-    "sass" : {
-      "build" : {
-        options : {
-          "update" : true,
-          "compass" : true
-        },
-        files : [{
-          expand : true,
-          cwd: "<%= dirs.development %>/sass",
-          src: ["**/*.scss"],
-          dest: '<%= dirs.production %>/temp/css',
-          ext: '.css'
-        }]
-      }
-    },
-
     "compass" : {
       "dist" : {
         "options" : {
