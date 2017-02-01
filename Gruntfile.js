@@ -2,7 +2,7 @@
 // ADD A SOURCEMAP FOR JS AND CSS   -> TO DO
 module.exports = function(grunt){
   //TWO AVALIABLE VALUES FOR 'assets_mode': A string  named "single_file" or "multiple_files"
-  var assetsMode = "single_file";
+  var assetsMode = "multiple_files";
 
   grunt.initConfig({
     dirs : {
