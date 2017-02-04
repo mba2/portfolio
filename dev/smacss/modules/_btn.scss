@@ -1,8 +1,6 @@
 .btn {
-  background: none;
+  @include btn;
   display: inline-block;
-  border: none;
-  outline: none;
   &-menu {
     height: 100%;
     width: 70px;

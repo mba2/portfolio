@@ -5,3 +5,9 @@
     clear: both;
   }
 }
+
+@mixin btn($radius : 0) {
+  outline: none;
+  cursor: pointer;
+  border-radius: $radius;
+}
