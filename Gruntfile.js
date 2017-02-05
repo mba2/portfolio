@@ -65,7 +65,7 @@ module.exports = function(grunt){
 
   "cssmin" :{
     "options" : {
-      "sourceMap" : true
+      // "sourceMap" : true
     },
     "single_file" : {
       files : {

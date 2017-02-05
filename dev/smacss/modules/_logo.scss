@@ -1,0 +1,32 @@
+.logo {
+  display: inline-block;
+  font-size: 17.5px;
+  color: #666;
+  &-header {
+    width: calc(100% - 77px);
+    height: 100%;
+    margin-left: -4px;
+    text-align: center;
+    line-height: 77px;
+    text-transform: lowercase;
+    vertical-align: top;
+    position: relative;
+    //TABLET BREAKPOINT
+    @include breakpoint(768px) {
+      width: 190px;
+      margin-left: 0px;
+      font-weight: bold;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto 0;
+        width: 1px;
+        background: #666;
+        height: 60%;
+      }
+    };
+  }
+}
