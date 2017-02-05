@@ -1,17 +1,50 @@
 .menu {
   width: 100%;
   text-align: center;
-
+  // MAKE THE MENU FIT THE ENTIRE VERTICAL SPACE OF <nav> ELEMENT
+  @include breakpoint(768px) {
+    height: 100%;
+  };
+  &-list {
+    //FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN
+    // AND HAS ITS DISPLAY MODE CHANGED TO TABLE
+    @include breakpoint(667px) {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+    }
+    // TABLET BREAKPOINT
+    // MAKE THE LIST FIT THE ENTIRE VERTICAL SPACE OF MENU ELEMENT
+    @include breakpoint(768px) {
+      height: 100%;
+    };
+  }
   &-listItem {
     width: 100%;
     height: 55px;
     line-height: 50px;
-    padding: 0 20px;
     text-align: center;
     font-size: 16px;
 
-    &:not(:last-child){
+    &:not(:last-child) {
       border-bottom: 1px solid #666;
     }
+    @include breakpoint(667px) {       // FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN SO ALL LIST ITEM WILL BECOME A 'TABLE CELL'
+      display: table-cell;
+      border-bottom: none !important;   // REMOVE BORDER-BOTTOM FOR ALL ITEMS AND SET A BORDER-RIGHT
+      &:not(:last-child) {              // TO ALL OF THEM BUT THE LAST CHILD
+        // border-right: 1px solid #666;
+      }
+    }
+    @include breakpoint(768px) {     // TABLET BREAKPOINT
+      vertical-align: middle;
+      height: 100%;
+      line-height: 77px;
+    }
+  }
+
+  &-link {
+    display: block;
+    height: 100%;
   }
 }
