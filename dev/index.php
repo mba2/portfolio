@@ -12,26 +12,25 @@
 </head>
 <body>
 
-  <div class="l-wrapper-main">
-    <header id="js_header" class="l-header">
-        <button id="js_headerMenuBtn" class="btn btn-menu mdElem">
+  <div class="l-mainWrapper">
+    <header class="l-header">
+        <button id="js_headerMenuBtn" class="btn btn-menu mobileElem">
           <span class="hambLine hambLine-top"></span>
           <span class="hambLine hambLine-center"></span>
           <span class="hambLine hambLine-bottom"></span>
-          <div id="js_headerMenuBtnText" class="btn btn-textWrapper">
-            <span id="js_menuTextClosed" class="btn btn-textContent is-closed">menu</span>
-            <span id="js_menuTextOpened" class="btn btn-textContent is-opened">close</span>
+          <div id="js_headerMenuBtnText" class="btn-menuText">
+            <span id="js_menuTextClosed" class="btn-textContent btn-textContent-closed">menu</span>
+            <span id="js_menuTextOpened" class="btn-textContent btn-textContent-opened">close</span>
           </div>
         </button>
-
         <a id="js_headerLogo" class="logo logo-header" href="/">Mario Brusarosco</a>
 
-        <nav id="js_headerNav" class="nav nav-header">
-          <menu id="js_headerMenu" class="menu menu-header">
-            <ul id="js_menuList" class="menulist">
-              <li class="menu-listItem"><a id="" class="menu-link" href="/resumee">resume</a></li>
-              <li class="menu-listItem"><a id="" class="menu-link" href="/snippets">snippets</a></li>
-              <li class="menu-listItem"><a id="" class="menu-link" href="/desk-apps">desktop apps</a></li>
+        <nav id="js_headerNav" class="nav nav-header menu-is-opened">
+          <menu id="js_headerMenu" class="menu menu-header menu-is-opened">
+            <ul id="js_menuList">
+              <li class="menu-listItem">resumee</li>
+              <li class="menu-listItem">snippets</li>
+              <li class="menu-listItem">desktop apps</li>
             </ul>
           </menu>
         </nav>

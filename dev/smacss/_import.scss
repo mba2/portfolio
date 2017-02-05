@@ -13,6 +13,7 @@
 @import 'layout/_header';
 @import 'layout/_wrapper';
 @import 'modules/_btn';
+<<<<<<< 450dbd53e6860637b956342e378fea6805487984
 @import 'modules/_footerLink';
 @import 'modules/_footerMenu';
 @import 'modules/_hambLine';
@@ -24,3 +25,11 @@
 @import 'modules/_menuList';
 @import 'modules/_nav';
 @import 'modules/_progBar';
+=======
+@import 'modules/_logo';
+@import 'modules/_menu';
+@import 'modules/_nav';
+@import 'modules/logo/_logo-wrapper';
+@import 'modules/menu/_hambLine';
+@import 'modules/menu/_listItem';
+>>>>>>> ADDS A MENU LIST OF ITEMS && ADDS A TOGGLE EFFECT TO THIS MENU

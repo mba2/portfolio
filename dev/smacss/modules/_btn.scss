@@ -21,9 +21,19 @@
   // THE TEXT - GENERALLY A FEW CHARACTERS
   &-textContent {
     display: block;
+    &-menuText {
+      font-size: 12px;
+      margin-top: 10px;
+      display: block;
+      position: relative;
+    }
+
     &.is-opened,
     &.is-closed {
-      transition:
+    border-right: 1px solid #666;
+    line-height: 0.75em;
+    padding-top: 10px;
+    transition:
       transform .4s ease-in-out,
       opacity .2s .2s ease-in-out;
     }

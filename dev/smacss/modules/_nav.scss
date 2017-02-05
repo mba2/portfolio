@@ -41,5 +41,16 @@
     opacity: 1;
     visibility: visible;
     transform: translate(0px,4px);
+    z-index: -1;
+    opacity: 0;
+    text-transform: lowercase;
+    width: 200px;
+    transform: translate(0,-200px);
+    transition: transform .7s cubic-bezier(0.85, -0.12, 0.17, 1.13),
+              opacity 0.6s ease-in-out;
+  }
+  body.menu-is-opened &{
+    opacity: 1;
+    transform: translate(0px,1px);
   }
 }
