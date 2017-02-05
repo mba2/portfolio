@@ -1,4 +1,3 @@
-@import 'base/_generics';
 @import 'base/_mixins';
 @import 'base/_mobile';
 @import 'base/_palettes';
@@ -7,6 +6,11 @@
 @import 'base/_sprites';
 @import 'base/_variables';
 @import 'base/_wbase';
+<<<<<<< f2ca30a6f9b69f9aea79bf9b421180ba57236669
+=======
+@import 'base/fonts/_font-test-older-ie';
+@import 'base/fonts/_font-test';
+>>>>>>> MAKES HEADER REPSONSIVE UNTIL TABLETS
 @import 'base/fonts/_fonts';
 @import 'layout/_content';
 @import 'layout/_footer';

@@ -14,7 +14,7 @@
 
   <div class="l-mainWrapper">
     <header class="l-header">
-        <button id="js_headerMenuBtn" class="btn btn-menu mobileElem">
+        <button id="js_headerMenuBtn" class="btn btn-menu mdElem">
           <span class="hambLine hambLine-top"></span>
           <span class="hambLine hambLine-center"></span>
           <span class="hambLine hambLine-bottom"></span>
@@ -24,13 +24,12 @@
           </div>
         </button>
         <a id="js_headerLogo" class="logo logo-header" href="/">Mario Brusarosco</a>
-
         <nav id="js_headerNav" class="nav nav-header menu-is-opened">
           <menu id="js_headerMenu" class="menu menu-header menu-is-opened">
-            <ul id="js_menuList">
-              <li class="menu-listItem">resumee</li>
-              <li class="menu-listItem">snippets</li>
-              <li class="menu-listItem">desktop apps</li>
+            <ul id="js_menuList" class="menu-list">
+              <li class="menu-listItem"><a id="" class="menu-link" href="/resumee">resumee</a></li>
+              <li class="menu-listItem"><a id="" class="menu-link" href="/snippets">snippets</a></li>
+              <li class="menu-listItem"><a id="" class="menu-link" href="/desk-apps">desktop apps</a></li>
             </ul>
           </menu>
         </nav>

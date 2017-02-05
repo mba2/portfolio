@@ -15,7 +15,8 @@
     vertical-align: top;
     position: relative;
 
-    @include breakpoint(768px) {     //TABLET BREAKPOINT
+    //TABLET BREAKPOINT
+    @include breakpoint(768px) {
       width: 190px;
       margin-left: 0px;
       font-weight: bold;
