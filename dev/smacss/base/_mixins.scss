@@ -8,8 +8,11 @@
 
 @mixin btn($radius : 0) {
   outline: none;
+  border: 0;
+  background: transparent;
   cursor: pointer;
   border-radius: $radius;
+  vertical-align: top;
 }
 
 //VALUES FOR $opacity: ALWAYS USE 0-100

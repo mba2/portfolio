@@ -3,21 +3,25 @@
   display: inline-block;
   &-menu {
     height: 100%;
-    width: 70px;
-    border-right: 1px solid #000;
+    width: 76px;
+    border-right: 1px solid #666;
     line-height: 0.75em;
+    padding-top: 10px;
   }
-  &-text {}
   &-menuText {
-    margin-top: 13px;
+    font-size: 12px;
+    margin-top: 10px;
     display: block;
     position: relative;
+  }
+  // THE TEXT - GENARALLY A FEW CHARACTERS
+  &-textContent {
+    display: block;
     &-opened,
     &-closed {
-      display: inline-block;
       transition:
-        transform .4s ease-in-out,
-        opacity .2s .2s ease-in-out;
+      transform .4s ease-in-out,
+      opacity .2s .2s ease-in-out;
     }
     &-opened {
       opacity: 0;
