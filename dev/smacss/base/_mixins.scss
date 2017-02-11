@@ -17,6 +17,13 @@
   vertical-align: top;
 }
 
+//TRANSFORM
+@mixin transform($type) {
+  -webkit-transform: $type;
+  -ms-transform: $type;
+  transform: $type;
+}
+
 //OPACITY
 //VALUES FOR $opacity: ALWAYS USE 0-100
 // e.g   @include opacity(40)  -- THIS IS THE SAME AS : opacity(.4) OR opacity(0.4) OR opacity(0.40)
