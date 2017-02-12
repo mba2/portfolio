@@ -13,7 +13,7 @@
 <body>
 
   <div class="l-mainWrapper">
-    <header class="l-header">
+    <header id="js_header" class="l-header">
         <button id="js_headerMenuBtn" class="btn btn-menu mdElem">
           <span class="hambLine hambLine-top"></span>
           <span class="hambLine hambLine-center"></span>
@@ -27,7 +27,7 @@
         <nav id="js_headerNav" class="nav nav-header menu-is-opened">
           <menu id="js_headerMenu" class="menu menu-header menu-is-opened">
             <ul id="js_menuList" class="menu-list">
-              <li class="menu-listItem"><a id="" class="menu-link" href="/resumee">resumee</a></li>
+              <li class="menu-listItem"><a id="" class="menu-link" href="/resumee">resume</a></li>
               <li class="menu-listItem"><a id="" class="menu-link" href="/snippets">snippets</a></li>
               <li class="menu-listItem"><a id="" class="menu-link" href="/desk-apps">desktop apps</a></li>
             </ul>
@@ -37,6 +37,7 @@
     </header>
 
     <main class="l-mainContent">
+      <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
       <!-- <h1>afsad asd asd asdsadag sd gsdgsd</h1>
       <p>Lorem <span class="strong-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
       <p>Lorem <span class="em-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
