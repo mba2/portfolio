@@ -5,4 +5,12 @@
   width: 100%;
   border-bottom: 1px solid #666;
   color: #666;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &.is-fixed {
+    position: fixed;
+    background: red;
+  }
 }
