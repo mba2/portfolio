@@ -26,18 +26,29 @@
       url("../fonts/dosis-light.eot?#iefix") format("embedded-opentype"),
       url("../fonts/dosis-light.woff") format("woff");
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
 }
-// THIN (SEMI THIN)
+// REGULAR
 @font-face {
   font-family: "Dosis";
   src:
-      url("../fonts/dosis-medium.woff2") format("woff2"),
-      url("../fonts/dosis-medium.eot?#iefix") format("embedded-opentype"),
-      url("../fonts/dosis-medium.woff") format("woff");
+  url("../fonts/dosis-regular.woff2") format("woff2"),
+  url("../fonts/dosis-regular.eot?#iefix") format("embedded-opentype"),
+  url("../fonts/dosis-regular.woff") format("woff");
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
+// // PRE BOLD
+// @font-face {
+//   font-family: "Dosis";
+//   src:
+//       url("../fonts/dosis-medium.woff2") format("woff2"),
+//       url("../fonts/dosis-medium.eot?#iefix") format("embedded-opentype"),
+//       url("../fonts/dosis-medium.woff") format("woff");
+//   font-style: normal;
+//   font-weight: 500;
+// }
+
 // BOLD (SEMI BOLD)
 @font-face {
   font-family: "Dosis";
