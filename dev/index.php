@@ -23,7 +23,9 @@
             <span id="js_menuTextOpened" class="btn-textContent btn-textContent-opened">close</span>
           </div>
         </button>
+
         <a id="js_headerLogo" class="logo logo-header" href="/">Mario Brusarosco</a>
+
         <nav id="js_headerNav" class="nav nav-header menu-is-opened">
           <menu id="js_headerMenu" class="menu menu-header menu-is-opened">
             <ul id="js_menuList" class="menu-list">
@@ -34,6 +36,9 @@
           </menu>
         </nav>
 
+        <div id="js_headerProgBar" class="progBar progBar-header">
+
+        </div>
     </header>
 
     <main class="l-mainContent">
@@ -48,6 +53,7 @@
       <p>Lorem <strong><em>ipsum</em></strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
       <p>Lorem <em><strong>ipsum</strong></em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p> -->
     </main>
+    
   </div>
 
   <!-- injector:js -->

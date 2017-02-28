@@ -4,15 +4,19 @@
   &-menu {
     height: 100%;
     width: 76px;
-    border-right: 1px solid #666;
-    line-height: 0.75em;
+    border-right: 1px solid $pink;
     padding-top: 10px;
+    background: #FFF;
+
+    line-height: 0.75em;
+    color: $pink;
   }
   &-menuText {
-    font-size: 12px;
-    margin-top: 10px;
     display: block;
     position: relative;
+    margin-top: 10px;
+
+    font-size: 14px;
   }
   // THE TEXT - GENARALLY A FEW CHARACTERS
   &-textContent {

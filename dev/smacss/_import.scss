@@ -1,6 +1,7 @@
 @import 'base/_generics';
 @import 'base/_mixins';
 @import 'base/_mobile';
+@import 'base/_palettes';
 @import 'base/_placeholders';
 @import 'base/_reset';
 @import 'base/_sprites';
@@ -12,8 +13,8 @@
 @import 'layout/_wrappers';
 @import 'modules/_btn';
 @import 'modules/_logo';
-@import 'modules/_menu';
 @import 'modules/_nav';
-@import 'modules/logo/_logo-wrapper';
+@import 'modules/_progBar';
 @import 'modules/menu/_hambLine';
 @import 'modules/menu/_listItem';
+@import 'modules/menu/_menu';
