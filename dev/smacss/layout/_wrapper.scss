@@ -1,0 +1,12 @@
+.l-wrapper {
+
+  &-main {
+
+  }
+
+  &-footer {
+    @media screen AND (min-width: 768) {
+      padding: 0 130px;
+    }
+  }
+}

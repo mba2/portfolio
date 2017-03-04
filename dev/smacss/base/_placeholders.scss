@@ -9,3 +9,9 @@
   overflow: hidden;
   background-repeat: no-repeat;
 }
+
+%listInlineBlock {
+  li {
+    display: inline-block;
+  }
+}

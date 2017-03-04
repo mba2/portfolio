@@ -11,23 +11,23 @@
     line-height: 0.75em;
     color: $pink;
   }
-  &-menuText {
+  &-textWrapper {
     display: block;
     position: relative;
     margin-top: 10px;
 
     font-size: 14px;
   }
-  // THE TEXT - GENARALLY A FEW CHARACTERS
+  // THE TEXT - GENERALLY A FEW CHARACTERS
   &-textContent {
     display: block;
-    &-opened,
-    &-closed {
+    &.is-opened,
+    &.is-closed {
       transition:
       transform .4s ease-in-out,
       opacity .2s .2s ease-in-out;
     }
-    &-opened {
+    &.is-opened {
       opacity: 0;
       visibility: hidden;
       transform: translateY(20px);
@@ -37,7 +37,7 @@
         transform: translateY(-10px);
       }
     }
-    &-closed {
+    &.is-closed {
       transform: translateY(0px);
 
       .menu-is-opened & {
