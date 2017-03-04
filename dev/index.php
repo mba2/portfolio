@@ -12,23 +12,23 @@
 </head>
 <body>
 
-  <div class="l-mainWrapper">
+  <div class="l-wrapper-main">
     <header id="js_header" class="l-header">
         <button id="js_headerMenuBtn" class="btn btn-menu mdElem">
           <span class="hambLine hambLine-top"></span>
           <span class="hambLine hambLine-center"></span>
           <span class="hambLine hambLine-bottom"></span>
-          <div id="js_headerMenuBtnText" class="btn-menuText">
-            <span id="js_menuTextClosed" class="btn-textContent btn-textContent-closed">menu</span>
-            <span id="js_menuTextOpened" class="btn-textContent btn-textContent-opened">close</span>
+          <div id="js_headerMenuBtnText" class="btn btn-textWrapper">
+            <span id="js_menuTextClosed" class="btn btn-textContent is-closed">menu</span>
+            <span id="js_menuTextOpened" class="btn btn-textContent is-opened">close</span>
           </div>
         </button>
 
         <a id="js_headerLogo" class="logo logo-header" href="/">Mario Brusarosco</a>
 
-        <nav id="js_headerNav" class="nav nav-header menu-is-opened">
-          <menu id="js_headerMenu" class="menu menu-header menu-is-opened">
-            <ul id="js_menuList" class="menu-list">
+        <nav id="js_headerNav" class="nav nav-header">
+          <menu id="js_headerMenu" class="menu menu-header">
+            <ul id="js_menuList" class="menulist">
               <li class="menu-listItem"><a id="" class="menu-link" href="/resumee">resume</a></li>
               <li class="menu-listItem"><a id="" class="menu-link" href="/snippets">snippets</a></li>
               <li class="menu-listItem"><a id="" class="menu-link" href="/desk-apps">desktop apps</a></li>
@@ -53,7 +53,22 @@
       <p>Lorem <strong><em>ipsum</em></strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
       <p>Lorem <em><strong>ipsum</strong></em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p> -->
     </main>
-    
+
+    <footer id="js_footer" class="l-footer">
+      <div id="js_footer-wrapper" class="l-wrapper-footer">
+        <ul id="js_footerMenu" class="menu menu-footer menu-list">
+          <li id="js_footerEmail" class="m-footerLink">
+            <a href="#" class="menu-link"></a>
+          </li>
+          <li id="js_footerTwitter" class="m-footerLink">
+            <a href="#" class="menu-link"></a>
+          </li>
+          <li id="js_footerLinked" class="m-footerLink">
+            <a href="#" class="menu-link"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </div>
 
   <!-- injector:js -->

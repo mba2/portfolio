@@ -4,6 +4,15 @@
   @include breakpoint(768px) {      // MAKE THE MENU FIT THE ENTIRE VERTICAL SPACE OF <nav> ELEMENT
     height: 100%;
   };
+  //MODULE VARIATIONS
+  &-header {
+
+  }
+
+  &-footer {
+
+  }
+
   &-list {
     @include breakpoint(667px) {    //FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN AND HAS ITS DISPLAY MODE CHANGED TO TABLE
       display: table;
@@ -39,9 +48,9 @@
       line-height: 77px;
     }
   }
-
   &-link {
     display: block;
     height: 100%;
   }
+
 }
