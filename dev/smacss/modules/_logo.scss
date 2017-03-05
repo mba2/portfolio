@@ -9,15 +9,18 @@
     width: calc(100% - 77px);
     height: 100%;
     margin-left: -3px;
-    text-align: center;
-    line-height: 77px;
-    text-transform: lowercase;
     vertical-align: top;
     position: relative;
 
-    @include breakpoint(768px) {     //TABLET BREAKPOINT
-      width: 190px;
+    text-transform: lowercase;
+    line-height: 77px;
+    text-align: center;
+
+    @include breakpoint(min,768px) {     //TABLET BREAKPOINT
+      width: 215px;
+      float: left;
       margin-left: 0px;
+
       font-weight: bold;
       &:after {
         content: "";
@@ -25,11 +28,23 @@
         top: 0;
         right: 0;
         bottom: 0;
-        margin: auto 0;
         width: 1px;
-        background: #666;
         height: 60%;
+        margin: auto 0;
+
+        background: $pink;
       }
-    };
+    }
+
+    @include breakpoint(min,1024px) {
+      width: 26%;
+
+      font-size: 25px;
+      font-weight: 100;
+      text-align: left;
+      &:after {
+        display: none;
+      }
+    }
   }
 }

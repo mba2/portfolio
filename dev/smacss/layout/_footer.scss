@@ -4,8 +4,11 @@
 
   color: $pink;
   font-size: 19px;
-  @media screen AND (min-width: 568px) {
+  @include breakpoint(min,568px) {
     height: 57px;
+  }
+  @include breakpoint(min,1024px) {
+    font-size: 21px;
   }
 
   .wrapper {
@@ -24,16 +27,16 @@
       background: $pink;
       top: 50%;
       left: calc(50% - .5px);
-      @media screen AND (min-width: 568px) {
+      @include breakpoint(min,568px) {
         display: none;
       }
     }
 
-    @media screen AND (min-width: 568px) {
+    @include breakpoint(min,568px) {
       width: auto;
       padding: 0 5%;
     }
-    @media screen AND (min-width: 768px) {
+    @include breakpoint(min,768px) {
 
     }
   }

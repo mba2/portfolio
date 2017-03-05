@@ -10,8 +10,8 @@ a {
   text-decoration: none;
 }
 
-.mdElem {
-  @include breakpoint(768px) {
+.mobileElem {
+  @include breakpoint(min, 1024px) {
     display: none !important;
   }
 }
