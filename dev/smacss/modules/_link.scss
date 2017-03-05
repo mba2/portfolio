@@ -1,54 +1,27 @@
 .link {
-
-  &-menu {
-    position: relative;
-
-    font-size: 21.3px;
-    color: $pink;
-  }
-  &-wrapper {
-    position: relative;
-    height: 37px;
-    &:after {
-      content: "";
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      top: 0;
-      left: calc(50% - .5px);
-      background-color: $pink;
-    }
-    .link-menu{
-      position: relative;
-      width: 50%;
-      height: 37px;
-      display: inline-block;
-      margin-left: -2px;
-
-      line-height: 37px;
-    }
-  }
+  // MODIFIERS/VARIATIONS
   &-email {
-    height: 36px;
-  }
+    clear: both;
+    height: 44px;
 
-  &-twitter {
-    text-align: left;
-    .icon {
-      left: 60px;
+    a {
+      padding-top: 18px;
     }
   }
   &-linkedin {
-    text-align: right;
-    .icon {
-      right: 70px;
-    }
+    float: right;
+  }
+  &-twitter {
+    float: left;
   }
 
-  .icon {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top:10px;
+  &-twitter,
+  &-linkedin {
+    a {
+      height: 37px;
+      padding-top: 10px;
+    }
   }
+  // .link CHILD ELEMENTS
+
 }

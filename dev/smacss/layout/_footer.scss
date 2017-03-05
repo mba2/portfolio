@@ -1,4 +1,33 @@
 .l-footer {
   height: 87px;
   background: #fff;
+
+  color: $pink;
+  font-size: 19px;
+
+  .wrapper {
+    position: relative;
+    height: 100%;
+    width: 210px;
+    margin: 0 auto;
+    font-size: 19px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      width: 1px;
+      height: 37px;
+      background: $pink;
+      top: 50%;
+      left: calc(50% - .5px);
+    }
+
+    @media screen AND (min-width: 568px) {
+      width: auto;
+    }
+    @media screen AND (min-width: 768px) {
+      padding: 0 130px;
+    }
+  }
 }
