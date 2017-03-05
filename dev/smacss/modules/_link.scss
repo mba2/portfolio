@@ -1,11 +1,27 @@
 .link {
+  position: relative;
+
+
   // MODIFIERS/VARIATIONS
+  &-socials {
+    width: 100%;
+    display: inline-block;
+    @media SCREEN AND (min-width: 568px) {
+      width: 50%;
+      float: right;
+    }
+  }
   &-email {
     clear: both;
     height: 44px;
-
+    @media SCREEN AND (min-width: 568px) {
+      float: left;
+    }
     a {
       padding-top: 18px;
+      @media SCREEN AND (min-width: 568px) {
+        padding-top: 8px;
+      }
     }
   }
   &-linkedin {
@@ -17,9 +33,31 @@
 
   &-twitter,
   &-linkedin {
+    @media SCREEN AND (min-width: 568px) {
+      float: left;
+      width: 50%;
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 1px;
+        height: 37px;
+        background: $pink;
+        top: 0;
+        left:0;
+      }
+    }
+    // MODIFIERS/VARIATIONS
+    // CHILD ELEMENTS
     a {
       height: 37px;
       padding-top: 10px;
+      @media SCREEN AND (min-width: 568px) {
+        padding-top: 5px;
+        padding-left: 18%;
+        padding-right: 18%;
+      }
     }
   }
   // .link CHILD ELEMENTS
