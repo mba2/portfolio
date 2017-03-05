@@ -2,3 +2,16 @@
   box-sizing: border-box;
   font-family: "Dosis", sans-serif;
 }
+a {
+  cursor: pointer;
+  display: block;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.mdElem {
+  @include breakpoint(768px) {
+    display: none !important;
+  }
+}

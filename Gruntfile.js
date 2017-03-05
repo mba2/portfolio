@@ -24,6 +24,13 @@ module.exports = function(grunt){
             cwd  : '<%= dirs.development %>',
             src  : '**/fonts/*',
             dest : '<%= dirs.production %>/fonts'
+          },
+          {
+            expand: true,
+            flatten: true,
+            cwd  : '<%= dirs.development %>',
+            src  : 'img/*',
+            dest : '<%= dirs.production %>/img'
           }
         ]
       }
@@ -42,6 +49,7 @@ module.exports = function(grunt){
     "compass" : {
       "dist" : {
         "options" : {
+          environment   : "development",
           "imagesDir"   : '<%= dirs.development %>/img',
           "sassDir"     : "<%= dirs.development %>/smacss",
           "cssDir"      : '<%= dirs.production  %>/temp/css',

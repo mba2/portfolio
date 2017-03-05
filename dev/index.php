@@ -43,7 +43,7 @@
 
     <main class="l-mainContent">
       <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
-      <h1>afsad asd asd asdsad sd gsdgsd</h1>
+      <!-- <h1>afsad asd asd asdsad sd gsdgsd</h1> -->
       <!-- <p style="font-style: italic;">dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
       <p>Lorem <span class="strong-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p> -->
       <!--
@@ -56,16 +56,23 @@
 
     <footer id="js_footer" class="l-footer">
       <div id="js_footer-wrapper" class="l-wrapper-footer">
-        <ul id="js_footerMenu" class="menu menu-footer menu-list">
-          <li id="js_footerEmail" class="m-footerLink">
-            <a href="#" class="menu-link"></a>
+        <ul id="js_footerMenu" class="menu menu-footer">
+          <li id="js_footerEmail" class="link link-menu link-email">
+            <a href="#">mariobrusarosco@gmail.com</a>
           </li>
-          <li id="js_footerTwitter" class="m-footerLink">
-            <a href="#" class="menu-link"></a>
-          </li>
-          <li id="js_footerLinked" class="m-footerLink">
-            <a href="#" class="menu-link"></a>
-          </li>
+          <li id="" class="link-wrapper">
+            <ul>
+                <li id="js_footerTwitter" class="link link-menu link-twitter">
+                  <a href="https://twitter.com/mariobrusarosco">twitter
+                    <img class="icon" src="img/twitter-icon.svg" alt="">
+                  </a>
+                </li>
+                <li id="js_footerLinked" class="link link-menu link-linkedin">
+                  <a href="https://www.linkedin.com/in/mariobrusarosco/">linkedin
+                    <img class="icon" src="img/linkedin-icon.svg" alt="">
+                  </a>
+                </li>
+            </ul>
         </ul>
       </div>
     </footer>

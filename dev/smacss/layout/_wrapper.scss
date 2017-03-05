@@ -5,7 +5,14 @@
   }
 
   &-footer {
-    @media screen AND (min-width: 768) {
+    height: 100%;
+    max-width: 235px;
+    margin: 0 auto;
+
+    @media screen AND (min-width: 568px) {
+
+    }
+    @media screen AND (min-width: 768px) {
       padding: 0 130px;
     }
   }
