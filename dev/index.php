@@ -55,12 +55,6 @@
     </main>
 
     <footer id="js_footer" class="l-footer">
-<<<<<<< HEAD
-      <div id="js_footer-wrapper" class="l-wrapper-footer">
-        <ul id="js_footerMenu" class="menu menu-footer">
-          <li id="js_footerEmail" class="link link-menu link-email">
-            <a href="#">mariobrusarosco@gmail.com</a>
-=======
       <div id="js_footerWrapper" class="wrapper">
         <ul id="js_footerMenu" class="menu menu-footer">
           <li id="js_footerEmail" class="link link-menu link-email">
@@ -75,21 +69,7 @@
             <a href="https://www.linkedin.com/in/mariobrusarosco/">linkedin
               <img class="icon" src="img/linkedin-icon.svg" alt="">
             </a>
->>>>>>> STYLES FOR FOOTER MOBILE (UNTIL 568PX)
           </li>
-          <li id="" class="link-wrapper">
-            <ul>
-                <li id="js_footerTwitter" class="link link-menu link-twitter">
-                  <a href="https://twitter.com/mariobrusarosco">twitter
-                    <img class="icon" src="img/twitter-icon.svg" alt="">
-                  </a>
-                </li>
-                <li id="js_footerLinked" class="link link-menu link-linkedin">
-                  <a href="https://www.linkedin.com/in/mariobrusarosco/">linkedin
-                    <img class="icon" src="img/linkedin-icon.svg" alt="">
-                  </a>
-                </li>
-            </ul>
         </ul>
       </div>
     </footer>
