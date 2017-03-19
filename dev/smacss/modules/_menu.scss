@@ -1,27 +1,39 @@
+@import 'base/_placeholders';
 .menu {
   width: 100%;
   text-align: center;
-  @include breakpoint(768px) {      // MAKE THE MENU FIT THE ENTIRE VERTICAL SPACE OF <nav> ELEMENT
+  @include breakpoint(min,768px) {      // MAKE THE MENU FIT THE ENTIRE VERTICAL SPACE OF <nav> ELEMENT
     height: 100%;
   };
   //MODULE VARIATIONS
   &-header {
+    @include breakpoint(min,1024px) {
+      @include clearfix();
+      float: right;
+      display: inline-block;
 
+      text-align: right;
+    }
   }
 
   &-footer {
-
+    height: 100%;
+    @extend %clearfix;
   }
 
   &-list {
-    @include breakpoint(667px) {    //FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN AND HAS ITS DISPLAY MODE CHANGED TO TABLE
+    @include breakpoint(min,667px) {    //FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN AND HAS ITS DISPLAY MODE CHANGED TO TABLE
       display: table;
       table-layout: fixed;
       width: 100%;
     }
-    @include breakpoint(768px) {     // TABLET BREAKPOINT MAKE THE LIST FIT THE ENTIRE VERTICAL SPACE OF MENU ELEMENT
+
+    @include breakpoint(min,768px) {     // TABLET BREAKPOINT MAKE THE LIST FIT THE ENTIRE VERTICAL SPACE OF MENU ELEMENT
       height: 100%;
     };
+    @include breakpoint(min,1024px) {
+      float: right;
+    }
   }
   &-listItem {
     width: 100%;
@@ -35,17 +47,22 @@
     &:not(:last-child) {
       border-bottom: 1px solid $pink;
     }
-    @include breakpoint(667px) {       // FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN SO ALL LIST ITEM WILL BECOME A 'TABLE CELL'
+    @include breakpoint(min,667px) {        // FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN SO ALL LIST ITEM WILL BECOME A 'TABLE CELL'
       display: table-cell;
-      border-bottom: none !important;   // REMOVE BORDER-BOTTOM FOR ALL ITEMS AND SET A BORDER-RIGHT
-      &:not(:last-child) {              // TO ALL OF THEM BUT THE LAST CHILD
-        // border-right: 1px solid #666;
-      }
+      border-bottom: none !important;   // REMOVE BORDER-BOTTOM FOR ALL ITEMS
+      border-left: none !important;    // AND A BORDER-RIGHT
     }
-    @include breakpoint(768px) {     // TABLET BREAKPOINT
+    @include breakpoint(min,768px) {     // TABLET BREAKPOINT
       vertical-align: middle;
       height: 100%;
       line-height: 77px;
+    }
+    @include breakpoint(min,1024px) {
+      font-size: 25px;
+      font-weight: 100;
+      padding: 0 5%;
+      display: inline-block;
+      width: auto;
     }
   }
   &-link {

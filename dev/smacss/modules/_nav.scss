@@ -14,32 +14,42 @@
               visibility .6s ease-in-out;
 
   text-transform: lowercase;
-  @include breakpoint(568px) {
+
+  @include breakpoint(min,568px) {
     width: 217px;
   }
   // FOR LARGER SMARTPHONES, THE NAVIGATION WILL FIT THE ENTIRE SCREEN
   // AND RECEIVE A BORDER-BOTTOM
-  @include breakpoint(667px) {
+  @include breakpoint(min,667px) {
     width: 100%;
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid $pink;
   }
-  // TABLET BREAKPOINT
-  @include breakpoint(768px) {
-    display: block;
-    height: 100%;
-    width: calc(100% - 190px);
-    margin-left: -4px;
+
+  @include breakpoint(min,768px) {        // TABLET BREAKPOINT
     position: relative;
-    z-index: 1;
-    display: inline-block;
-    vertical-align: top;
+    width: calc(100% - 291px);
+    height: 100%;
+    float: left;
     opacity: 1;
-    transform: translate(0,0);
+    z-index: 1;
+    vertical-align: top;
     border-bottom: 0;
+    background-color: transparent;
+  }
+
+  @include breakpoint(min,1024px) { // DESKTOP BREAKPOINT
+    float: right;
+    display: inline-block;
+    width: 74%;
+    visibility: visible;
+    transform: translate(0,0);
   }
   body.menu-is-opened &{
     opacity: 1;
     visibility: visible;
     transform: translate(0px,4px);
+    @include breakpoint(min,768px) {
+      transform: translate(0px,0px);
+    }
   }
 }

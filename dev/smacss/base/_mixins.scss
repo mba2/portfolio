@@ -34,9 +34,8 @@
 
 //BREAKPOINTS
 
-// MOBILE FIRST APPROACH
-@mixin breakpoint($min-width){
-  @media ONLY SCREEN AND (min-width:$min-width) {
+@mixin breakpoint($minOrMax, $width , $media: "screen"){
+  @media #{$media} AND (#{$minOrMax}-width : $width) {
     @content;
   }
 }

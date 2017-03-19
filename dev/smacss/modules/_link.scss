@@ -1,0 +1,109 @@
+.link {
+  position: relative;
+
+  // MODULE PSEUDO CLASSES OR STATES
+  &:before,
+  &:after {
+    transition: background ease-in-out .3s;
+  }
+
+  &:before{ }
+  &:after { }
+
+
+  &:after ,
+  &:active {   }
+
+  &:after { }
+  &:active { }
+
+  // MODULE STATES
+  &:hover,
+  &:active {
+    &:before {
+      background-color: $linkHoverFooter;
+    }
+  }
+
+  // MODULE CHILD ELEMENTS
+  a {
+    height: 100%;
+  }
+
+  // ==== MODULE VARIATIONS ===== //
+
+  // THIS MODULE INSIDE A FOOTER
+  &-footer {
+    transition: color ease-in-out .3s;
+    &:hover {
+      color: $linkHoverFooter;
+
+      svg {
+        fill: $linkHoverFooter;
+      }
+    }
+  }
+  &-socials {
+    width: 100%;
+    display: inline-block;
+    @include breakpoint(min,568px) {
+      width: 50%;
+      float: right;
+    }
+  }
+  &-email {
+    clear: both;
+    height: 44px;
+    @include breakpoint(min,568px) {
+      float: left;
+      width: 50%;
+      text-align: left;
+      height: 37px;
+    }
+    @include breakpoint(min,1024px) {
+      text-align: center;
+    }
+    // CHILD ELEMENTS
+    a {
+      padding-top: 18px;
+      @include breakpoint(min,568px) {
+        padding-top: 8px;
+      }
+    }
+  }
+  &-linkedin {
+    float: right;
+  }
+  &-twitter {
+    float: left;
+  }
+
+  &-twitter,
+  &-linkedin {
+    @media SCREEN AND (min-width: 568px) {
+      float: left;
+      width: 50%;
+
+      &:before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 1px;
+        height: 37px;
+        background: $pink;
+        top: 0;
+        left:0;
+      }
+    }
+    // ==== CHILD ELEMENTS ===== //
+    a {
+      height: 37px;
+      padding-top: 10px;
+      @media SCREEN AND (min-width: 568px) {
+        padding-top: 5px;
+        padding-left: 18%;
+        padding-right: 18%;
+      }
+    }
+  }
+}
