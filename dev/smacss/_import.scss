@@ -1,14 +1,23 @@
-@import 'base/_generics';
+<<<<<<< b016ec19ff83179426401f61f1d47ae9e0df2c3d
+<<<<<<< 891f90614e8898479329b04f8906fac5d72e0d41
 @import 'base/_mixins';
 @import 'base/_mobile';
 @import 'base/_palettes';
+=======
+@import 'base/_generics';
+@import 'base/_mixins';
+@import 'base/_mobile';
+>>>>>>> INSERTS DOSIS FONT
 @import 'base/_placeholders';
 @import 'base/_reset';
 @import 'base/_sprites';
 @import 'base/_variables';
 @import 'base/_wbase';
+@import 'base/fonts/_font-test-older-ie';
+@import 'base/fonts/_font-test';
 @import 'base/fonts/_fonts';
 @import 'layout/_content';
+<<<<<<< b016ec19ff83179426401f61f1d47ae9e0df2c3d
 @import 'layout/_footer';
 @import 'layout/_header';
 @import 'layout/_wrapper';
@@ -28,3 +37,20 @@
 @import 'modules/_menuList';
 @import 'modules/_nav';
 @import 'modules/_progBar';
+=======
+@import 'layout/_header';
+@import 'layout/_wrappers';
+@import 'modules/_btn';
+>>>>>>> INSERTS DOSIS FONT
+@import 'modules/_logo';
+@import 'modules/_menu';
+@import 'modules/_nav';
+@import 'modules/logo/_logo-wrapper';
+@import 'modules/menu/_hambLine';
+@import 'modules/menu/_listItem';
+<<<<<<< b016ec19ff83179426401f61f1d47ae9e0df2c3d
+sdas
+=======
+>>>>>>> CENTRALIZING LIST ITEMS
+=======
+>>>>>>> INSERTS DOSIS FONT
