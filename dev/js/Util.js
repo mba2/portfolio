@@ -1,4 +1,3 @@
-<<<<<<< 891f90614e8898479329b04f8906fac5d72e0d41
 // function Util(){
 //   this.jQueryActive = true;
 //   this.register = [];
@@ -73,7 +72,6 @@
 //     });
 //   }
 // };
-=======
 function Util(){
   this.register = [];
   this.isNull = function(value) {
@@ -147,4 +145,3 @@ Util.prototype = {
     });
   }
 };
->>>>>>> CENTRALIZING LIST ITEMS

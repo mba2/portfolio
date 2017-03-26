@@ -14,11 +14,8 @@
               visibility .6s ease-in-out;
 
   text-transform: lowercase;
-  opacity .6s ease-in-out;
+  opacity: .6s;
 
-  @include breakpoint(568px) {
-    width: 217px;
-  }
   // FOR LARGER SMARTPHONES, THE NAVIGATION WILL FIT THE ENTIRE SCREEN
   // AND RECEIVE A BORDER-BOTTOM
   @include breakpoint(min,667px) {
