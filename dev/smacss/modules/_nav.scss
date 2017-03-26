@@ -14,8 +14,9 @@
               visibility .6s ease-in-out;
 
   text-transform: lowercase;
+  opacity .6s ease-in-out;
 
-  @include breakpoint(min,568px) {
+  @include breakpoint(568px) {
     width: 217px;
   }
   // FOR LARGER SMARTPHONES, THE NAVIGATION WILL FIT THE ENTIRE SCREEN
@@ -48,6 +49,13 @@
     opacity: 1;
     visibility: visible;
     transform: translate(0px,81px);
+    z-index: -1;
+    opacity: 0;
+    text-transform: lowercase;
+    width: 200px;
+    transform: translate(0,-200px);
+    transition: transform .7s cubic-bezier(0.85, -0.12, 0.17, 1.13),
+              opacity 0.6s ease-in-out;
     @include breakpoint(min,768px) {
       transform: translate(0px,0px);
     }

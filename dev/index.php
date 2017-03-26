@@ -18,12 +18,11 @@
           <span class="hambLine hambLine-top"></span>
           <span class="hambLine hambLine-center"></span>
           <span class="hambLine hambLine-bottom"></span>
-          <div id="js_headerMenuBtnText" class="btn btn-textWrapper">
-            <span id="js_menuTextClosed" class="btn btn-textContent is-closed">menu</span>
-            <span id="js_menuTextOpened" class="btn btn-textContent is-opened">close</span>
+          <div id="js_headerMenuBtnText" class="btn-menuText">
+            <span id="js_menuTextClosed" class="btn-textContent btn-textContent-closed">menu</span>
+            <span id="js_menuTextOpened" class="btn-textContent btn-textContent-opened">close</span>
           </div>
         </button>
-
         <a id="js_headerLogo" class="logo logo-header" href="/">Mario Brusarosco</a>
 
         <nav id="js_headerNav" class="nav nav-header">
