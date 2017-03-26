@@ -47,7 +47,7 @@
   body.menu-is-opened &{
     opacity: 1;
     visibility: visible;
-    transform: translate(0px,4px);
+    transform: translate(0px,81px);
     @include breakpoint(min,768px) {
       transform: translate(0px,0px);
     }

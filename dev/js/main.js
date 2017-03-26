@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var header = Header.init();
+  // var header = Header.init();
 
 });
 

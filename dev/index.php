@@ -28,11 +28,7 @@
 
         <nav id="js_headerNav" class="nav nav-header">
           <menu id="js_headerMenu" class="menu menu-header">
-<<<<<<< HEAD
-            <ul id="js_menuList" class="menulist">
-=======
             <ul id="js_menuList" class="menu-list">
->>>>>>> footer
               <li class="menu-listItem"><a id="" class="menu-link" href="/resumee">resume</a></li>
               <li class="menu-listItem"><a id="" class="menu-link" href="/snippets">snippets</a></li>
               <li class="menu-listItem"><a id="" class="menu-link" href="/desk-apps">desktop apps</a></li>
@@ -47,15 +43,6 @@
 
     <main class="l-mainContent">
       <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
-      <!-- <h1>afsad asd asd asdsad sd gsdgsd</h1> -->
-      <!-- <p style="font-style: italic;">dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-      <p>Lorem <span class="strong-test">ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p> -->
-      <!--
-      <p>Lorem <span class="em-test">ipsum</span>
-      <p>Lorem <strong>ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-      <p>Lorem <em>ipsum</em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-      <p>Lorem <strong><em>ipsum</em></strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
-      <p>Lorem <em><strong>ipsum</strong></em> dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p> -->
     </main>
 
     <footer id="js_footer" class="l-footer">
