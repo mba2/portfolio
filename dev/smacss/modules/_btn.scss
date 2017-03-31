@@ -6,7 +6,7 @@
     width: 77px;
     float: left;
     border-right: 1px solid $pink;
-    padding-top: 10px;
+    padding: 10px;
     background: #FFF;
 
     line-height: 0.75em;
@@ -32,28 +32,25 @@
       position: relative;
     }
 
-    &.is-opened,
-    &.is-closed {
-    border-right: 1px solid #666;
+    &--menu,
+    &--close {
     line-height: 0.75em;
     padding-top: 10px;
     transition:
       transform .4s ease-in-out,
       opacity .2s .2s ease-in-out;
     }
-    &.is-opened {
+    &--close {
       opacity: 0;
       visibility: hidden;
-      transform: translateY(20px);
+      transform: translateY(-20px);
       .menu-is-opened & {
         opacity: 1;
         visibility: visible;
-        transform: translateY(-10px);
+        transform: translateY(-20px);
       }
     }
-    &.is-closed {
-      transform: translateY(0px);
-
+    &--menu {
       .menu-is-opened & {
         opacity: 0;
         visibility: hidden;

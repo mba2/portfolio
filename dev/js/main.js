@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  Header.menu.toggleBehavior();
   // var header = Header.init();
 
 });

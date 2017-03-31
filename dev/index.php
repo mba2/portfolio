@@ -19,8 +19,8 @@
           <span class="hambLine hambLine-center"></span>
           <span class="hambLine hambLine-bottom"></span>
           <div id="js_headerMenuBtnText" class="btn-menuText">
-            <span id="js_menuTextClosed" class="btn-textContent btn-textContent-closed">menu</span>
-            <span id="js_menuTextOpened" class="btn-textContent btn-textContent-opened">close</span>
+            <span id="js_menuTextClosed" class="btn-textContent btn-textContent--menu">menu</span>
+            <span id="js_menuTextOpened" class="btn-textContent btn-textContent--close">close</span>
           </div>
         </button>
         <a id="js_headerLogo" class="logo logo-header" href="/">Mario Brusarosco</a>
