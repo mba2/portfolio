@@ -25,14 +25,11 @@
 
   @include breakpoint(min,768px) {        // TABLET BREAKPOINT
     position: relative;
-    width: calc(100% - 291px);
+    width: calc(100% - 320px);
     height: 100%;
-    float: left;
+    float: right;
     opacity: 1;
-    z-index: 1;
-    vertical-align: top;
     border-bottom: 0;
-    background-color: transparent;
   }
 
   @include breakpoint(min,1024px) { // DESKTOP BREAKPOINT
@@ -42,17 +39,13 @@
     visibility: visible;
     transform: translate(0,0);
   }
+
   body.menu-is-opened &{
     opacity: 1;
     visibility: visible;
-    transform: translate(0px,81px);
-    z-index: -1;
-    opacity: 0;
-    text-transform: lowercase;
-    width: 200px;
-    transform: translate(0,-200px);
-    transition: transform .7s cubic-bezier(0.85, -0.12, 0.17, 1.13),
-              opacity 0.6s ease-in-out;
+    transform: translate(0px,80px);
+    opacity: 1;
+
     @include breakpoint(min,768px) {
       transform: translate(0px,0px);
     }

@@ -23,6 +23,11 @@
 
   &-list {
     // MAKE THE MENU FIT THE ENTIRE VERTICAL SPACE OF <nav> ELEMENT
+    @include breakpoint(min,667px) {
+      display: table;
+      table-layout: fixed;
+      width: 100%;
+    }
     @include breakpoint(min,768px) {
       // TABLET BREAKPOINT MAKE THE LIST FIT THE ENTIRE VERTICAL SPACE OF MENU ELEMENT
       height: 100%;
