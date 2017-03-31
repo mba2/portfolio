@@ -27,7 +27,7 @@ var Header = {
           this.header.classList.remove("is-hidden");  // DISPLAY THE HEADER
         }
         else if( scrollDirection === "down" &&        //  IF USER IS SCROLLING DOWN...
-                !this.isHidden();                      //  AND THE HEADER IS NOT ALREADY HIDDEN
+                !this.isHidden()                      //  AND THE HEADER IS NOT ALREADY HIDDEN
         ){
           this.header.classList.add("is-hidden");      // HIDE THE HEADER
           this.header.classList.remove("is-fixed");   // SET THE HEADER TO ITS INITIAL POSITION

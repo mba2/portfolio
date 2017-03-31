@@ -34,7 +34,8 @@
     @include breakpoint(min,568px) {
     }
     @include breakpoint(min,768px) {
-
+      margin:0 0 0 auto;
+      width: 95%;
     }
   }
 }
