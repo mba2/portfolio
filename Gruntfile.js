@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // REMOVE A PARTIAL AND CONTINUES COMPILATING    -> TO DO
 // ADD A SOURCEMAP FOR JS AND CSS   -> TO DO
 module.exports = function(grunt){
@@ -232,3 +233,5 @@ module.exports = function(grunt){
 
 // INSERT, DELETE OR UPDATE SCSS FILES => OK
 // INSERT, DELETE OR UPDATE CSS FILES => PENDING
+=======
+>>>>>>> RESTARTS THE BUILD PROJECT
