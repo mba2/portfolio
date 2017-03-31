@@ -11,6 +11,7 @@
 
     line-height: 0.75em;
     color: $pink;
+    font-size: 15px;
     @include breakpoint(min,768px) {
       float: left;
     }

@@ -7,7 +7,7 @@
 
   &-top {
     .menu-is-opened & {
-      transform: rotate(-133deg) translate(-8px,-8px)
+      transform: rotate(-130deg) translate(-9px,-9px)
     }
   }
   &-center {
@@ -19,7 +19,7 @@
 
   &-bottom {
     .menu-is-opened & {
-      transform: rotate(133deg) translate(-6px,6px);
+      transform: rotate(130deg) translate(-6px,7px);
     }
   }
 }
