@@ -8,10 +8,10 @@
   //MODULE VARIATIONS
   &-header {
     @include breakpoint(min,1024px) {
-      @include clearfix();
-      float: right;
-      display: inline-block;
-
+      // @include clearfix();
+      // float: right;
+      // display: inline-block;
+      //
       text-align: right;
     }
   }
@@ -36,7 +36,9 @@
       width: 100%;
     };
     @include breakpoint(min,1024px) {
-      float: right;
+      // float: right;
+      // width: auto !important;
+      // display: inline-block;
     }
   }
   &-listItem {
@@ -65,13 +67,14 @@
     @include breakpoint(min,1024px) {
       font-size: 25px;
       font-weight: 100;
-      padding: 0 5%;
       display: inline-block;
       width: auto;
+      @include linkHoverEffect();
     }
   }
   &-link {
     display: block;
     height: 100%;
+    padding: 0 30px;
   }
 }
