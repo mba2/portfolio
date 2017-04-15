@@ -34,6 +34,8 @@
 
   // THIS MODULE INSIDE A FOOTER
   &-footer {
+    text-align: center;
+
     transition: color ease-in-out .3s;
     &:hover {
       color: $linkHoverFooter;
@@ -45,7 +47,9 @@
   }
   &-socials {
     width: 100%;
+    height: 44px;
     display: inline-block;
+    @include clearfix();
     @include breakpoint(min,568px) {
       width: 50%;
       float: right;
@@ -65,23 +69,26 @@
     }
     // CHILD ELEMENTS
     a {
-      padding-top: 18px;
+      font-size: 17px;
+      font-weight: 500;
+      word-wrap: break-word;
+      text-overflow: ellipsis;
       @include breakpoint(min,568px) {
         padding-top: 8px;
       }
     }
   }
   &-linkedin {
-    float: right;
   }
   &-twitter {
-    float: left;
   }
 
   &-twitter,
   &-linkedin {
+    display: block;
+    width: 50%;
+    float: left;
     @media SCREEN AND (min-width: 568px) {
-      float: left;
       width: 50%;
 
       &:before {
@@ -101,8 +108,8 @@
       padding-top: 10px;
       @media SCREEN AND (min-width: 568px) {
         padding-top: 5px;
-        padding-left: 18%;
-        padding-right: 18%;
+        // padding-left: 18%;
+        // padding-right: 18%;
       }
     }
   }

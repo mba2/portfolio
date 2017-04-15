@@ -8,38 +8,43 @@
   //MODULE VARIATIONS
   &-header {
     @include breakpoint(min,1024px) {
-      @include clearfix();
-      float: right;
-      display: inline-block;
-
+      // @include clearfix();
+      // float: right;
+      // display: inline-block;
+      //
       text-align: right;
     }
   }
 
   &-footer {
     height: 100%;
-    @extend %clearfix;
+    @include clearfix;
   }
 
   &-list {
-    @include breakpoint(min,667px) {    //FOR LARGER SMARTPHONES THE LIST WILL FIT THE ENTIRE SCREEN AND HAS ITS DISPLAY MODE CHANGED TO TABLE
+    // MAKE THE MENU FIT THE ENTIRE VERTICAL SPACE OF <nav> ELEMENT
+    @include breakpoint(min,667px) {
       display: table;
       table-layout: fixed;
       width: 100%;
     }
-
-    @include breakpoint(min,768px) {     // TABLET BREAKPOINT MAKE THE LIST FIT THE ENTIRE VERTICAL SPACE OF MENU ELEMENT
+    @include breakpoint(min,768px) {
+      // TABLET BREAKPOINT MAKE THE LIST FIT THE ENTIRE VERTICAL SPACE OF MENU ELEMENT
       height: 100%;
+      display: table;
+      table-layout: fixed;
+      width: 100%;
     };
     @include breakpoint(min,1024px) {
-      float: right;
+      // float: right;
+      // width: auto !important;
+      // display: inline-block;
     }
   }
   &-listItem {
     width: 100%;
     height: 55px;
     border-left: 4px solid $pink;
-
     line-height: 55px;
     text-align: center;
     font-size: 16px;
@@ -53,21 +58,23 @@
       border-left: none !important;    // AND A BORDER-RIGHT
     }
     @include breakpoint(min,768px) {     // TABLET BREAKPOINT
+      border-bottom: 1px solid #666;
       vertical-align: middle;
       height: 100%;
       line-height: 77px;
     }
+
     @include breakpoint(min,1024px) {
       font-size: 25px;
       font-weight: 100;
-      padding: 0 5%;
       display: inline-block;
       width: auto;
+      @include linkHoverEffect();
     }
   }
   &-link {
     display: block;
     height: 100%;
+    padding: 0 30px;
   }
-
 }

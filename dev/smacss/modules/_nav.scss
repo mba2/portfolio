@@ -14,10 +14,8 @@
               visibility .6s ease-in-out;
 
   text-transform: lowercase;
+  opacity: .6;
 
-  @include breakpoint(min,568px) {
-    width: 217px;
-  }
   // FOR LARGER SMARTPHONES, THE NAVIGATION WILL FIT THE ENTIRE SCREEN
   // AND RECEIVE A BORDER-BOTTOM
   @include breakpoint(min,667px) {
@@ -27,14 +25,11 @@
 
   @include breakpoint(min,768px) {        // TABLET BREAKPOINT
     position: relative;
-    width: calc(100% - 291px);
+    width: calc(100% - 320px);
     height: 100%;
-    float: left;
+    float: right;
     opacity: 1;
-    z-index: 1;
-    vertical-align: top;
     border-bottom: 0;
-    background-color: transparent;
   }
 
   @include breakpoint(min,1024px) { // DESKTOP BREAKPOINT
@@ -44,10 +39,13 @@
     visibility: visible;
     transform: translate(0,0);
   }
+
   body.menu-is-opened &{
     opacity: 1;
     visibility: visible;
-    transform: translate(0px,4px);
+    transform: translate(0px,80px);
+    opacity: 1;
+
     @include breakpoint(min,768px) {
       transform: translate(0px,0px);
     }

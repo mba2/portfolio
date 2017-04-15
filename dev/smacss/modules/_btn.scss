@@ -3,13 +3,15 @@
   display: inline-block;
   &-menu {
     height: 100%;
-    width: 76px;
+    width: 77px;
+    float: left;
     border-right: 1px solid $pink;
-    padding-top: 10px;
+    padding: 10px;
     background: #FFF;
 
     line-height: 0.75em;
     color: $pink;
+    font-size: 15px;
     @include breakpoint(min,768px) {
       float: left;
     }
@@ -24,25 +26,32 @@
   // THE TEXT - GENERALLY A FEW CHARACTERS
   &-textContent {
     display: block;
-    &.is-opened,
-    &.is-closed {
-      transition:
+    &-menuText {
+      font-size: 12px;
+      margin-top: 10px;
+      display: block;
+      position: relative;
+    }
+
+    &--menu,
+    &--close {
+    line-height: 0.75em;
+    padding-top: 10px;
+    transition:
       transform .4s ease-in-out,
       opacity .2s .2s ease-in-out;
     }
-    &.is-opened {
+    &--close {
       opacity: 0;
       visibility: hidden;
-      transform: translateY(20px);
+      transform: translateY(-20px);
       .menu-is-opened & {
         opacity: 1;
         visibility: visible;
-        transform: translateY(-10px);
+        transform: translateY(-20px);
       }
     }
-    &.is-closed {
-      transform: translateY(0px);
-
+    &--menu {
       .menu-is-opened & {
         opacity: 0;
         visibility: hidden;

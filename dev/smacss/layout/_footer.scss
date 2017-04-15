@@ -13,7 +13,7 @@
   .wrapper {
     position: relative;
     height: 100%;
-    width: 210px;
+    width: 90%;
     margin: 0 auto;
     font-size: 19px;
 
@@ -32,11 +32,10 @@
     }
 
     @include breakpoint(min,568px) {
-      width: auto;
-      padding: 0 5%;
     }
     @include breakpoint(min,768px) {
-
+      margin:0 0 0 auto;
+      width: 95%;
     }
   }
 }

@@ -8,8 +8,7 @@
   &-header {
     width: calc(100% - 77px);
     height: 100%;
-    margin-left: -3px;
-
+    float: right;
     vertical-align: top;
     position: relative;
 
@@ -18,7 +17,7 @@
     text-align: center;
 
     @include breakpoint(min,768px) {     //TABLET BREAKPOINT
-      width: 215px;
+      width: 240px;
       float: left;
       margin-left: 0px;
 

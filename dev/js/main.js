@@ -1,5 +1,6 @@
 $(document).ready(function(){
-  var header = Header.init();
+  Header.menu.toggleBehavior();
+  // var header = Header.init();
 
 });
 

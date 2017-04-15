@@ -1,11 +1,13 @@
 .l-header {
   background: #fff;
-  position: relative;
+  position: fixed;
   height: 77px;
   width: 100%;
   z-index: 2;
-  // border-bottom: 1px solid $pink;
+  border-bottom: 1px solid $pink;
   color: $pink;
+
+  @include clearfix();
 
   @include breakpoint(min,1024px) {
     padding: 0 4.8vw;
