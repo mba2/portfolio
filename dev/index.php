@@ -81,6 +81,7 @@
       <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
     </main>
 
+    <button id="js_back-to-top" class="btn btn-back-to-top"></button>
     <footer id="js_footer" class="l-footer">
       <div id="js_footerWrapper" class="wrapper">
         <ul id="js_footerMenu" class="menu menu-footer">
