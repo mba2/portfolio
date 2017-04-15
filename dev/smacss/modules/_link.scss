@@ -18,7 +18,7 @@
     }
   }
 
-  // MODULE CHILD ELEMENTS
+  // MODULE CHILDREN ELEMENTS
   a {
     @media SCREEN AND (min-width: 568px) {
     }
@@ -84,7 +84,7 @@
       // link-socials .link-menu STATES
       &:hover {
         &:before {
-          transform: scaleY(1.5);
+          @include transform(scaleY(1.5));
           background: $linkHoverFooter;
         }
       }

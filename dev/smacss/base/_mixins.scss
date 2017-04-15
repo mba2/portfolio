@@ -1,4 +1,4 @@
-//CLEARFIX
+  //CLEARFIX
 @mixin clearfix {
   &:after {
     content: "";
@@ -17,11 +17,16 @@
   vertical-align: top;
 }
 
-//TRANSFORM
+//TRANSFORMS
 @mixin transform($type) {
   -webkit-transform: $type;
   -ms-transform: $type;
   transform: $type;
+}
+
+// TRANSITIONS
+@function customTrans($propName, $time: .3s, $effect: ease-in-out){
+  @return $propName $time $effect;
 }
 
 //OPACITY

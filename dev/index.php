@@ -28,9 +28,46 @@
         <nav id="js_headerNav" class="nav nav-header">
           <menu id="js_headerMenu" class="menu menu-header">
             <ul id="js_menuList" class="menu-list">
-              <li class="menu-listItem"><a id="" class="menu-link" href="/resumee">resume</a></li>
-              <li class="menu-listItem"><a id="" class="menu-link" href="/snippets">snippets</a></li>
-              <li class="menu-listItem"><a id="" class="menu-link" href="/desk-apps">desktop apps</a></li>
+              <li class="menu-listItem">
+                <a id="" class="link link-menu" href="/resumee">resume</a>
+              </li>
+              <li class="menu-listItem has-drop">
+                <a id="" class="link link-menu" href="/snippets">snippets</a>
+                <ul class="dropdown dropdown-header">
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">link 1</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">link 2</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">link 3</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">link 4</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">link 5</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a class="dropdown-link" href="#">see all (15)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-listItem has-drop">
+                <a id="" class="link link-menu" href="/desk-apps">desktop apps</a>
+                <ul class="dropdown dropdown-header">
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">syntax guide</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#" class="dropdown-link">code editor</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-listItem">
+                <a id="" class="link link-menu" href="#">contact</a>
+              </li>
             </ul>
           </menu>
         </nav>
@@ -53,13 +90,10 @@
           <div id="" class="link-socials">
             <li id="js_footerGithub" class="link link-menu link-footer link-github">
               <a href="https://github.com/mariobrusarosco">github
-                <?xml version="1.0" encoding="iso-8859-1"?>
-                <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
                 <svg class="icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 	 width="512px" height="512px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <g>
-                	<path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M408.027,408.027
+                  <g>
+                	  <path d="M256,0C114.615,0,0,114.615,0,256s114.615,256,256,256s256-114.615,256-256S397.385,0,256,0z M408.027,408.027
                 		c-19.76,19.759-42.756,35.267-68.354,46.094c-6.502,2.75-13.105,5.164-19.801,7.246V423c0-20.167-6.916-35-20.75-44.5
                 		c8.668-0.833,16.625-2,23.875-3.5s14.918-3.667,23-6.5c8.084-2.833,15.334-6.208,21.75-10.125c6.418-3.917,12.584-9,18.5-15.25
                 		c5.918-6.25,10.875-13.333,14.875-21.25s7.168-17.417,9.5-28.5c2.334-11.083,3.5-23.292,3.5-36.625c0-25.833-8.416-47.833-25.25-66
@@ -73,9 +107,8 @@
                 		c10.827-25.597,26.335-48.594,46.093-68.353c19.758-19.759,42.756-35.267,68.353-46.093C198.805,46.679,226.957,41,256,41
                 		s57.195,5.679,83.676,16.879c25.598,10.827,48.594,26.335,68.354,46.093c19.758,19.758,35.266,42.756,46.092,68.353
                 		C465.32,198.805,471,226.957,471,256s-5.68,57.195-16.879,83.675C443.295,365.271,427.785,388.27,408.027,408.027z"/>
-                </g>
+                  </g>
                 </svg>
-
               </a>
             </li>
             <li id="js_footerTwitter" class="link link-menu link-footer link-twitter">
