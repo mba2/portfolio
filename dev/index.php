@@ -81,7 +81,6 @@
       <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
     </main>
 
-<<<<<<< HEAD
     <button id="js_back-to-top" class="btn btn-back-to-top">
       <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40px" height="40px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
       viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -101,9 +100,6 @@
        </g>
       </svg>
     </button>
-=======
-    <button id="js_back-to-top" class="btn btn-back-to-top"></button>
->>>>>>> ADD MARK UP FOR THE BACK TO TOP BTN
     <footer id="js_footer" class="l-footer">
       <div id="js_footerWrapper" class="wrapper">
         <ul id="js_footerMenu" class="menu menu-footer">
