@@ -77,6 +77,7 @@
         </div>
     </header>
 
+
     <main class="l-mainContent l-mainContent--home">
       <picture>
         <source srcset="img/home-bg-03.jpg" media="(min-width:1200px)">
@@ -89,6 +90,7 @@
           <p class="home-title home-title--front">front end</p>
           <p class="home-title home-title--dev">developer</p>
       </div>
+
     </main>
 
     <button id="js_back-to-top" class="btn btn-back-to-top">
