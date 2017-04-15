@@ -77,8 +77,8 @@
         </div>
     </header>
 
-    <main class="l-mainContent">
-      <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
+    <main class="l-main-content">
+      <img src="./img/home-bg.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
     </main>
 
     <button id="js_back-to-top" class="btn btn-back-to-top">
