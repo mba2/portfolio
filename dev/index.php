@@ -81,7 +81,25 @@
       <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
     </main>
 
-    <button id="js_back-to-top" class="btn btn-back-to-top"></button>
+    <button id="js_back-to-top" class="btn btn-back-to-top">
+      <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40px" height="40px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+      viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink">
+       <defs>
+        <style type="text/css">
+         <![CDATA[
+          .str0 {stroke:#E45F56;stroke-width:1.99991}
+          .fil1 {fill:none}
+          .fil0 {fill:white}
+         ]]>
+        </style>
+       </defs>
+       <g id="Camada_x0020_1">
+        <metadata id="CorelCorpID_0Corel-Layer"/>
+        <circle class="fil0 str0" cx="20" cy="20" r="18"/>
+        <polyline class="fil1 str0" points="12,26 20,14 28,26 "/>
+       </g>
+      </svg>
+    </button>
     <footer id="js_footer" class="l-footer">
       <div id="js_footerWrapper" class="wrapper">
         <ul id="js_footerMenu" class="menu menu-footer">
