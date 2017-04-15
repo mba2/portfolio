@@ -36,10 +36,12 @@ var Page = {
 
       $(window).scroll(function(){                   // IN EACH SCROLL ON THE PAGE
         if(_this.getScrollTop() > startPoint && !btnIsVisibile) {     // IF THE AMOUT OF SCROLL IS GREATER THAN THE START POINT LIMIT  (startPoint VARIABLE)
+          console.log("Show the button!");
           _this.DOM.backToTopBtn.classList.toggle("is-visible");
           btnIsVisibile = true;
           // return true;
         }else if( _this.getScrollTop() < startPoint && btnIsVisibile ){
+          console.log("Hide the button!");
           _this.DOM.backToTopBtn.classList.toggle("is-visible");
           btnIsVisibile = false;
         }
