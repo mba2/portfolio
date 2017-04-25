@@ -22,11 +22,33 @@ module.exports = function( grunt ){
     responsive_images : {
       target : {
         options : {
-          sizes : [
-            
+          sizes :[
+            {
+              "name"  : "small",
+              "width" : 320
+            },
+            {
+              "name"  : "medium",
+              "width" : 768
+            },
+            {
+              "name"  : "large",
+              "width" : 1400
+            },
+            {
+              "name"  : "full-hd",
+              "width" : 1920
+            }
           ]
         },
-
+        files: [{
+            expand : true,
+            // cwd: "<%= dir.dev %>/<%= dir.images %>",
+            cwd: "dev/img",
+            src: "*.{jpg,gif,png}",
+            // dest : "<%= dir.currTask %>/<%= dir.images %>"
+            dest : "build/img"
+        }]
       }
     }
   });
@@ -37,6 +59,7 @@ module.exports = function( grunt ){
 
 
   grunt.registerTask("default",[
-    "clean:target"
+    "clean:target",
+    "responsive_images"
   ]);
 };
