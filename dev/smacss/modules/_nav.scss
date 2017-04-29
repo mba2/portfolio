@@ -34,6 +34,7 @@
 
   @include breakpoint(min,1024px) { // DESKTOP BREAKPOINT
     float: right;
+    z-index: 1;
     display: inline-block;
     width: 74%;
     visibility: visible;
