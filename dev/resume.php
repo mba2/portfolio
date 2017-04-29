@@ -29,7 +29,7 @@
           <menu id="js_headerMenu" class="menu menu-header">
             <ul id="js_menuList" class="menu-list">
               <li class="menu-listItem">
-                <a id="" class="link link-menu" href="./resume.php">resume</a>
+                <a id="" class="link link-menu" href="/resumee">resume</a>
               </li>
               <li class="menu-listItem has-drop">
                 <a id="" class="link link-menu" href="/snippets">snippets</a>
