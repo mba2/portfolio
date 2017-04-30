@@ -19,38 +19,28 @@ module.exports = function( grunt ){
       }
     },
     //RESPONSIVE IMAGES TASK
-    responsive_images : {
-      target : {
-        options : {
-          sizes :[
-            {
-              "name"  : "small",
-              "width" : 320
-            },
-            {
-              "name"  : "medium",
-              "width" : 768
-            },
-            {
-              "name"  : "large",
-              "width" : 1400
-            },
-            {
-              "name"  : "full-hd",
-              "width" : 1920
-            }
-          ]
-        },
-        files: [{
-            expand : true,
-            // cwd: "<%= dir.dev %>/<%= dir.images %>",
-            cwd: "dev/img",
-            src: "*.{jpg,gif,png}",
-            // dest : "<%= dir.currTask %>/<%= dir.images %>"
-            dest : "build/img"
-        }]
-      }
-    }
+    responsive_images: {
+       myTask: {
+         options: {
+           engine : "im",
+           sizes: [{
+             name: 'large',
+             width: 640
+           },{
+             name: "large2",
+             width: 1024,
+             suffix: "_x2",
+             quality: 60
+           }]
+         },
+         files: [{
+           expand: true,
+           src: ['img/**.{jpg,gif,png}'],
+           cwd: 'dev/',
+           dest: 'build/tmp/'
+         }]
+       }
+     },
   });
   // LOAD TASKS
   grunt.loadNpmTasks("grunt-contrib-clean");
