@@ -3,19 +3,31 @@ module.exports = function( grunt ){
   grunt.initConfig({
     // FOLDERS PATHS, STORED IN VARIABLES
     dir : {
-      "src"     : "src",
-      "dev"     : "dev",
-      "deploy"  : "deploy",
-      "css"     : "scss",
-      "js"      : "js",
-      "fonts"   : "fonts",
-      "images"  : "img",
+      "dev"         : "dev",
+      "deploy"      : "deploy",
+      "css"         : "scss",
+      "js"          : "js",
+      "fonts"       : "fonts",
+      "images"      : "img",
       "currTask": grunt.cli.tasks[0] || "build"
     },
     //CLEAN TASK
     clean : {
       target : {
-        src : "<%= dir.currTask %>/**/*"
+        src : "<%= dir.currTask %>/"
+      }
+    },
+    //COPY TASK
+    "copy" : {
+      "dev" : {
+        "files" : [
+          {
+            "expand" : true,
+            "cwd": "<%= dir.dev %>",
+            "src" : ["?(public||src||tests)/**/*"],
+            "dest" : "<%= dir.currTask %>"
+          }
+        ]
       }
     },
     //RESPONSIVE IMAGES TASK
@@ -35,9 +47,9 @@ module.exports = function( grunt ){
          },
          files: [{
            expand: true,
-           src: ['img/**.{jpg,gif,png}'],
-           cwd: 'dev/',
-           dest: 'build/tmp/'
+           cwd: '<%= dir.currTask %>/',
+           src: ['<%= dir.images %>/**.{jpg,gif,png}'],
+           dest: '<%= dir.currTask %>/'
          }]
        }
      },
@@ -49,7 +61,8 @@ module.exports = function( grunt ){
 
 
   grunt.registerTask("default",[
-    "clean:target",
+    "clean",
+    "copy:dev",
     "responsive_images"
   ]);
 };
