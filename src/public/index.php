@@ -29,7 +29,7 @@
           <menu id="js_headerMenu" class="menu menu-header">
             <ul id="js_menuList" class="menu-list">
               <li class="menu-listItem">
-                <a id="" class="link link-menu" href="./resume.php">resume</a>
+                <a id="" class="link link-menu" href="/resumee">resume</a>
               </li>
               <!-- <li class="menu-listItem has-drop">
                 <a id="" class="link link-menu" href="/snippets">snippets</a>
@@ -77,18 +77,8 @@
         </div>
     </header>
 
-    <main class="l-mainContent l-mainContent--home">
-      <picture>
-        <source srcset="img/home-bg-03.jpg" media="(min-width:1200px)">
-        <source srcset="img/home-bg-02.jpg" media="(min-width:768px)">
-        <source srcset="img/home-bg-01.jpg" media="(min-width:0px)">
-        <img src="img/home-bg-01.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
-      </picture>
-      <div class="home">
-          <h1 style="display:none;">mario brusarosco</h1>
-          <p class="home-title home-title--front">front end</p>
-          <p class="home-title home-title--dev">developer</p>
-      </div>
+    <main class="l-mainContent">
+      <div class="fake-expanded-content" style="height:200vh;">fake expanded content</div>
     </main>
 
     <button id="js_back-to-top" class="btn btn-back-to-top">
@@ -110,7 +100,6 @@
        </g>
       </svg>
     </button>
-
     <footer id="js_footer" class="l-footer">
       <div id="js_footerWrapper" class="wrapper">
         <ul id="js_footerMenu" class="menu menu-footer">
