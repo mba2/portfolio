@@ -1,0 +1,76 @@
+  //CLEARFIX
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//BUTTON
+@mixin btn($radius : 0) {
+  outline: none;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: $radius;
+  vertical-align: top;
+}
+
+//TRANSFORMS
+@mixin transform($type) {
+  -webkit-transform: $type;
+  -ms-transform: $type;
+  transform: $type;
+}
+
+// TRANSITIONS
+@function customTrans($propName, $time: .3s, $effect: ease-in-out){
+  @return $propName $time $effect;
+}
+
+//OPACITY
+//VALUES FOR $opacity: ALWAYS USE 0-100
+// e.g   @include opacity(40)  -- THIS IS THE SAME AS : opacity(.4) OR opacity(0.4) OR opacity(0.40)
+@mixin opacity($opacity) {
+  filter : alpha(#{$opacity});  // IE OLD VERSIONS
+  opacity: $opacity * 0.01;
+}
+
+//BREAKPOINTS
+
+@mixin breakpoint($minOrMax, $width , $media: "screen"){
+  @media #{$media} AND (#{$minOrMax}-width : $width) {
+    @content;
+  }
+}
+
+
+//MENU - LINKS - HOVER
+@mixin linkHoverEffect(){
+  position: relative;
+  &:after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+  }
+  &:nth-child(2n+1) {
+    &:hover {
+      &:after {
+        box-shadow: rgba(244, 67, 54, 0.1) 0px 78px inset;
+      }
+    }
+  }
+  &:nth-child(2n+0) {
+    &:hover {
+      &:after {
+        box-shadow: rgba(244, 67, 54, 0.1) 0px -78px inset;
+      }
+    }
+  }
+}
