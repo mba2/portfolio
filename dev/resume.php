@@ -102,6 +102,7 @@
                 <img src="img/home-breadcrumb-icon.svg" alt="">
               </a>
           </li>
+<<<<<<< HEAD
           <li class="breadcrumb-path"><a>resume</a></li>
           <li class="breadcrumb-path"><a>resume</a></li>
         </ul>
@@ -223,6 +224,12 @@
           </div>
         </div>
       </section>
+=======
+          <li class="breadcrumb-path">resume</li>
+          <li class="breadcrumb-path">resume</li>
+        </ul>
+      </section>
+>>>>>>> STARTING BREADCRUMB
     </main>
 
     <button id="js_back-to-top" class="btn btn-back-to-top">
