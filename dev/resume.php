@@ -102,9 +102,68 @@
                 <img src="img/home-breadcrumb-icon.svg" alt="">
               </a>
           </li>
-          <li class="breadcrumb-path">resume</li>
-          <li class="breadcrumb-path">resume</li>
+          <li class="breadcrumb-path"><a>resume</a></li>
+          <li class="breadcrumb-path"><a>resume</a></li>
         </ul>
+      </section>
+
+      <section class="personalData">
+        <h1 class="personalData-name"><b>mario</b> brusarosco de almeida</h1>
+        <article class="personalData-info">
+          <p class="personalData-text personalData-age">30 years</p>
+          <p class="personalData-text persoanlData-bornPlace">brazilian</p>
+        </article>
+
+        <article class="personalData-contact">
+          <p class="personalData-text personalData-tel"><i></i>9 9630 - 3693</p>
+          <p class="personalData-text personalData-email"><i></i>mariobrusarosco@gmail.com</p>
+          <p class="personalData-text personalData-git"><i></i>mariobrusarosco</p>
+        </article>
+
+        <article class="personalData-goal">
+          <h1>goal</h1>
+          <h2>front end developer</h2>
+        </article>
+        <article class="personalData-education">
+            <h1>education</h1>
+            <div class="personalData-group">
+              <h2>faculdade eniac - (2014 - 2016)</h2>
+              <h2>análise e desenvolvimento </br> de sistemas</h2>
+            </div>
+        </article>
+      </section>
+
+      <section class="developerData">
+        <div class="tabs">
+          <nav class="tabs-nav">
+            <div class="tabs-tab tabs-tab--skills">
+              <span class-"tabs-title tabs-title--skills">skills</span>
+              <i class="tabs-arrow"></i>
+            </div>
+            <div class="tabs-tab tabs-tab--xp">
+              <span class-"tabs-title tabs-title--xp">experience</span>
+              <i class="tabs-arrow"></i>
+            </div>
+            <div class="tabs-tab tabs-tab--courses">
+              <span class-"tabs-title tabs-title--courses">courses</span>
+              <i class="tabs-arrow"></i>
+            </div>
+          </nav>
+          <div class="tabs-mainContent">
+            <article class="tabs-content tabs-content--skills">
+              <h1 class="tabs-title tabs-title--content">skills</h1>
+              <h2 clas="tabs-content"></h2>
+            </article>
+            <article class="tabs-content tabs-content--xp">
+              <h1 class="tabs-title tabs-title--content">experience</h1>
+
+            </article>
+            <article class="tabs-content tabs-content--courses">
+              <h1 class="tabs-title tabs-title--content">courses</h1>
+
+            </article>
+          </div>
+        </div>
       </section>
     </main>
 
