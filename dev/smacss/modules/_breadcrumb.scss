@@ -1,0 +1,36 @@
+// MODULE'S MAIN RULE
+.breadcrumb {
+  margin-top: 17px;
+  //.breadcrumb 'S MODIFIERS
+
+  //.breadcrumb 'S SUBCOMPONENTS
+  &-home {
+
+    img {
+      width: 35px;
+      height: 32px;
+    }
+  }
+  &-path {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0px 3px 0 20px;
+
+    font-size: 20px;
+    &:first-of-type {
+      margin: 0 0 0 0;
+      &:after { display: none;}
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -20px;
+      display: inline-block;
+      width: 15px;
+      height: 1px;
+      background-color: $darkBlue;
+    }
+  }
+}
