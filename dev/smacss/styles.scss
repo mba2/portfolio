@@ -2,30 +2,35 @@
   "sprites";
   // "import";
 
-  @import 'base/_mixins';
-  @import 'base/_generics';
-  @import 'base/_mobile';
-  @import 'base/_palettes';
-  @import 'base/_placeholders';
-  @import 'base/_reset';
-  @import 'base/_sprites';
-  @import 'base/_variables';
-  @import 'base/_wbase';
-  @import 'base/fonts/_fonts';
-  @import 'layout/_content';
-  @import 'layout/_footer';
-  @import 'layout/_header';
-  @import 'modules/_btn';
-  @import 'modules/_dropdown';
-  @import 'modules/_footerLink';
-  @import 'modules/_footerMenu';
-  @import 'modules/_hambLine';
-  @import 'modules/_icon';
-  @import 'modules/_link';
-  @import 'modules/_listItem';
-  @import 'modules/_logo';
-  @import 'modules/_menu';
-  @import 'modules/_menuLink';
-  @import 'modules/_menuList';
-  @import 'modules/_nav';
-  @import 'modules/_progBar';
+//BASE
+@import 'base/_mixins',
+        'base/_generics',
+        'base/_mobile',
+        'base/_palettes',
+        'base/_placeholders',
+        'base/_reset',
+        'base/_sprites',
+        'base/_variables',
+        'base/_wbase',
+        'base/fonts/_fonts';
+//LAYOUT
+@import 'layout/_content',
+        'layout/_footer',
+        'layout/_header';
+//MODULES
+@import 'modules/_btn',
+        'modules/_dropdown',
+        'modules/_footerLink',
+        'modules/_footerMenu',
+        'modules/_hambLine',
+        'modules/_icon',
+        'modules/_link',
+        'modules/_listItem',
+        'modules/_logo',
+        'modules/_breadcrumb',
+        'modules/_config-panel',
+        'modules/_menu',
+        'modules/_menuLink',
+        'modules/_menuList',
+        'modules/_nav',
+        'modules/_progBar';

@@ -163,7 +163,7 @@ module.exports = function(grunt){
                   "dev/css/**/*.css",
                 ],
         tasks : [
-          "sass_import",
+          // "sass_import",
           "compass",
            "cssmin:" + (assetsMode || "single_file"),
            "clean:temp"
@@ -218,7 +218,7 @@ module.exports = function(grunt){
   var mainTasks = [
     "clean:build",
     // "sprite",
-    "sass_import",
+    // "sass_import",
     "compass",
     "cssmin:" + ( assetsMode || "single_file" ),
     "uglify:" + ( assetsMode || "single_file" ),
