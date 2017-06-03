@@ -1,32 +1,38 @@
 // MODULE'S MAIN RULE
 .breadcrumb {
-  margin: 17px auto 30px;
+  margin-top: 20px;
+  @include centralize(320px);
   //.breadcrumb 'S MODIFIERS
 
   //.breadcrumb 'S SUBCOMPONENTS
   &-home {
-
     img {
+      position: relative;
+      top: 3px;
       width: 35px;
-      height: 32px;
     }
+  }
+
+  &-list {
+    @include clearfix();
   }
   &-path {
     position: relative;
-    display: inline-block;
-    vertical-align: bottom;
-    margin: 0px 3px 0 20px;
+    display: block;
+    margin: 15px 0 0 30px;
+    float: left;
 
     font-size: 20px;
+
     &:first-of-type {
-      margin: 0 0 0 0;
+      margin: 0;
       &:after { display: none;}
     }
     &:after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: -20px;
+      left: -22.5px;
       display: inline-block;
       width: 15px;
       height: 1px;
