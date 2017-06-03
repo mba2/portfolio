@@ -1,0 +1,151 @@
+
+// MODULE
+.personalData {
+  padding-top: 35px;
+  $personalData : &;
+  //MODULE SUBCOMPONENTS
+  &-name {
+    // @include centralize(320px, 0 auto);
+
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 1px;
+    color: $pink;
+    strong {
+      font-weight: 900;
+    }
+  }
+
+  &-info {
+    padding-top: 20px;
+  }
+
+  &-contact {
+    // @include centralize(320px, 30px auto);
+    position: relative;
+    padding: 30px 0;
+    //SUBCOMPONENT'S CHILDREN
+    > .personalData-text {
+      // padding-left: 40px;
+      margin: 15px auto;
+    }
+    i {
+      width: 30px;
+      height: 30px;
+      background-color: chocolate;
+      display: inline-block;
+      margin-right: 15px;
+    }
+    // FOR 'ART DIRECTION' THIS SECTION WILL INHERIT AS SPECIFIC STYLE USED FOR .personalData-group ELEMENTS
+    @include groupBottomBorder();
+
+  }
+
+  &-group {
+    position: relative;
+    // padding: 15px 0;
+
+    //SUBCOMPONENT MODIFIERS
+    &--info {
+      display: flex;
+      justify-content: center;
+      padding: 0 10% 20px;
+      @include groupBottomBorder();
+    }
+
+    &--education {
+      padding: 20px 0 8px;
+    }
+  }
+
+  &-text {
+    color: $lightBlue;
+    font-size: 20px;
+  }
+
+  &-title {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 25px;
+
+    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: $pink;
+
+    &:after {
+      content: "";
+      height: 3px;
+      width: 100%;
+      position: absolute;
+      bottom: -10px;
+      right: -10px;
+
+      background-color: $pink;
+    }
+  }
+
+  &-subtitle {
+    padding-left: 30px;
+
+    font-weight: 400;
+    font-size: 22px;
+    text-align: left;
+    color: $lightBlue;
+
+    span {
+      position: relative;
+
+      &:after {
+        content: "";
+        height: 3px;
+        width: 80%;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+
+        background-color: $lightBlue;
+      }
+    }
+  }
+
+  &-email,
+  &-git {
+    font-size: 22px;
+
+  }
+
+  &-tel {
+    font-size: 19px;
+  }
+
+  &-age {
+      padding-right: (33px / 2);
+  }
+
+  &-birthPlace {
+      padding-left: (33px / 2);
+  }
+
+  &-goal {
+    padding: 30px 0;
+  }
+
+  &-education {
+    padding-bottom: 40px;
+
+    .personalData-title {
+        margin-bottom: 10px
+    }
+
+    .personalData-subtitle {
+
+      &:first-child {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  //MODULE'S MOFIFIERS
+}
