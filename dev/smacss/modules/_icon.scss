@@ -1,7 +1,5 @@
 .icon {
-  vertical-align: middle;;
-  margin-top: -10px;
-  transition: fill ease-in-out .3s;
+
   // MODULE PSEUDO CLASSES OR STATES
   &:before,
   &:after {
@@ -24,14 +22,20 @@
     }
   }
   // MODULE CHILD ELEMENTS
+  &-svg {
 
+  }
 
   // MODIFIERS/VARIATIONS
-    // THIS MODULE INSIDE A 'LAYOUT'
+    // THIS MODULE WHEN IT' INSIDE A 'LAYOUT' NAMED .l-footer
   .l-footer & {
     width: 20px;
     height: 20px;
     fill: $pink;
+    vertical-align: middle;
+    margin-top: -10px;
+
+    transition: fill ease-in-out .3s;
   }
 
 }
