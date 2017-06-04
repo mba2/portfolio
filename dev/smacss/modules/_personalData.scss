@@ -5,13 +5,15 @@
   $personalData : &;
   //MODULE SUBCOMPONENTS
   &-name {
-    // @include centralize(320px, 0 auto);
-
     text-transform: uppercase;
     text-align: center;
     font-size: 5vw;
     letter-spacing: 1px;
     color: $pink;
+
+    @include breakpoint(min-width, 568px) {
+        text-align: left;
+    }
     strong {
       font-weight: 900;
     }
@@ -26,20 +28,27 @@
     position: relative;
     padding: 30px 0;
     //SUBCOMPONENT'S CHILDREN
-    > .personalData-text {
-      // padding-left: 40px;
+    > .personalData-line {
       margin: 15px auto;
     }
-    i {
-      width: 30px;
-      height: 30px;
-      background-color: chocolate;
+
+    .personalData-text {
+        display: inline-block;
+    }
+
+    .icon {
       display: inline-block;
-      margin-right: 15px;
+      width: 30px;
+      margin-right: 10px;
+
+      text-align: center;
+    }
+
+    .icon-svg {
+        fill: $pink;
     }
     // FOR 'ART DIRECTION' THIS SECTION WILL INHERIT AS SPECIFIC STYLE USED FOR .personalData-group ELEMENTS
     @include groupBottomBorder();
-
   }
 
   &-group {
@@ -59,9 +68,13 @@
     }
   }
 
-  &-text {
+  &-line {
     color: $lightBlue;
     font-size: 20px;
+  }
+
+  &-text {
+
   }
 
   &-title {

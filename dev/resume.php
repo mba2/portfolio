@@ -111,15 +111,48 @@
         <h1 class="personalData-name"><b>mario</b> brusarosco de almeida</h1>
         <article class="personalData-info">
           <div class="personalData-group personalData-group--info">
-            <p class="personalData-text personalData-age">30 years</p>
-            <p class="personalData-text personalData-birthPlace">brazilian</p>
+            <p class="personalData-line personalData-age">30 years</p>
+            <p class="personalData-line personalData-birthPlace">brazilian</p>
           </div>
         </article>
 
         <article class="personalData-contact">
-          <p class="personalData-text personalData-tel"><i></i>9 9630 - 3693</p>
-          <p class="personalData-text personalData-email"><i></i>mariobrusarosco@gmail.com</p>
-          <p class="personalData-text personalData-git"><i></i>mariobrusarosco</p>
+
+          <div class="personalData-line personalData-tel">
+            <i class="icon icon--tel">
+              <svg class="icon-svg icon-svg--tel" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="18px" height="31px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 18 31"
+               xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path class="fill fill--phone" d="M16 0l-14 0c-1,0 -2,1 -2,2l0 27c0,1 1,2 2,2l14 0c1,0 2,-1 2,-2l0 -27c0,-1 -1,-2 -2,-2zm-9 2l4 0c0,0 0,0 0,0 0,0 0,0 0,0l-4 0c0,0 0,0 0,0 0,0 0,0 0,0zm2 28c-1,0 -1,-1 -1,-1 0,-1 0,-1 1,-1 1,0 1,0 1,1 0,0 0,1 -1,1zm8 -3l-16 0 0 -24 16 0 0 24z"/>
+              </svg>
+            </i>
+            <p class="personalData-text">9 9630 - 3693</p>
+          </div>
+
+          <div class="personalData-line personalData-email">
+            <i class="icon icon--email">
+              <svg class="icon-svg icon-svg--email" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="14px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 20 15"
+               xmlns:xlink="http://www.w3.org/1999/xlink">
+               <path class="fill fill--email" d="M10 10l-2 -2 -8 6c1,1 1,1 1,1l18 0c0,0 1,0 1,-1l-7 -6 -3 2z"/>
+               <path class="fill fill--email" d="M20 0c0,0 -1,0 -1,0l-18 0c0,0 0,0 -1,0l10 9 10 -9z"/>
+               <polygon class="fill fill--email" points="0,1 0,14 7,8 "/>
+               <polygon class="fill fill--email" points="13,8 20,14 20,1 "/>
+              </svg>
+            </i>
+            <p class="personalData-text">mariobrusarosco@gmail.com</p>
+          </div>
+
+          <div class="personalData-line personalData-git">
+            <i class="icon icon--git">
+              <svg class="icon-svg icon-svg--git" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25px" height="24px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+              viewBox="0 0 25 24"
+               xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path class="fill fill-git" d="M23 6c-1,-2 -2,-3 -4,-4 -2,-1 -4,-2 -7,-2 -2,0 -4,1 -6,2 -2,1 -3,2 -4,4 -1,2 -2,4 -2,6 0,3 1,6 2,8 2,2 4,4 7,4 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,-1 0,-1 0,-1 0,-1 0,-2l0 0c0,1 -1,1 -1,1 0,0 -1,0 -1,-1 0,0 -1,0 -1,0 0,0 -1,-1 -1,-1l0 0c0,-1 0,-1 0,-1 -1,-1 -1,-1 -1,-1l0 0c0,0 0,0 -1,0 0,0 0,0 0,0 0,0 0,-1 0,-1 0,0 1,0 1,0l0 0c0,0 1,1 1,1 0,0 1,0 1,1 0,0 0,0 1,1 0,0 0,0 1,0 0,0 0,0 1,0 0,0 0,0 0,0 1,-1 1,-2 1,-2 0,0 -1,0 -1,0 -1,0 -1,-1 -2,-1 -1,0 -1,-1 -1,-1 -1,0 -1,-1 -1,-2 0,0 0,-1 0,-2 0,-1 0,-3 1,-4 -1,0 -1,-2 0,-3 0,0 1,0 1,0 1,1 1,1 2,1 0,0 0,0 0,0 1,0 2,0 3,0 2,0 3,0 4,0l0 0c1,0 1,0 2,-1 0,0 1,0 1,0 1,1 1,3 0,3 1,1 1,3 1,4 0,1 0,2 0,2 0,1 0,2 -1,2 0,0 -1,1 -1,1 -1,0 -1,1 -2,1 0,0 -1,0 -1,0 0,1 1,1 1,2l0 4c0,0 0,0 0,0 0,0 0,0 0,0 3,0 5,-2 7,-4 1,-2 2,-5 2,-8 0,-2 -1,-4 -2,-6z"/>
+              </svg>
+            </i>
+            <p class="personalData-text">mariobrusarosco</p>
+          </div>
         </article>
 
         <article class="personalData-goal">

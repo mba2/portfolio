@@ -1,46 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW X7 -->
-<?xml-stylesheet href="phone.css" type="text/css"?>
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="13px" height="23px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 1 1"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="18px" height="31px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 18 31"
  xmlns:xlink="http://www.w3.org/1999/xlink">
- <g id="Colors">
+ <g id="Camada_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_2431530368560">
-   <g>
-    <path class="fil0" d="M1 0l-1 0c0,0 0,0 0,0l0 1c0,0 0,0 0,0l1 0c0,0 0,0 0,0l0 -1c0,0 0,0 0,0zm-1 0l0 0c0,0 0,0 0,0 0,0 0,0 0,0l0 0c0,0 0,0 0,0 0,0 0,0 0,0zm0 1c0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0 0,0zm1 0l-1 0 0 -1 1 0 0 1z"/>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
-   <g>
-   </g>
+  <path class="fill--phone" d="M16 0l-14 0c-1,0 -2,1 -2,2l0 27c0,1 1,2 2,2l14 0c1,0 2,-1 2,-2l0 -27c0,-1 -1,-2 -2,-2zm-9 2l4 0c0,0 0,0 0,0 0,0 0,0 0,0l-4 0c0,0 0,0 0,0 0,0 0,0 0,0zm2 28c-1,0 -1,-1 -1,-1 0,-1 0,-1 1,-1 1,0 1,0 1,1 0,0 0,1 -1,1zm8 -3l-16 0 0 -24 16 0 0 24z"/>
+  <g id="_2359097883728">
+  </g>
+  <g id="_2359097883760">
+  </g>
+  <g id="_2359097885584">
+  </g>
+  <g id="_2359097885616">
+  </g>
+  <g id="_2359097885328">
+  </g>
+  <g id="_2359097884880">
+  </g>
+  <g id="_2359097884240">
+  </g>
+  <g id="_2359097885712">
+  </g>
+  <g id="_2359097886768">
+  </g>
+  <g id="_2359097888144">
+  </g>
+  <g id="_2359097887024">
+  </g>
+  <g id="_2359097887216">
+  </g>
+  <g id="_2359097886704">
+  </g>
+  <g id="_2359097886352">
+  </g>
+  <g id="_2359097887696">
   </g>
  </g>
 </svg>
