@@ -78,7 +78,7 @@
 
 // RESUME PAGE
 @mixin groupBottomBorder {
-  &::after {
+  &::before {
     content: "";
     display: block;
     position: absolute;
