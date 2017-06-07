@@ -163,8 +163,8 @@
         <article class="personalData-education">
             <h1 class="personalData-title">education</h1>
             <div class="personalData-group personalData-group--education">
-              <h2 class="personalData-subtitle"><span>análise de sistemas<span></h2>
-              <h2 class="personalData-subtitle"><span>faculdade eniac - (2014 - 2016)</span></h2>
+              <h2 class="personalData-subtitle personalData-subtitle--education"><span>análise de sistemas<span></h2>
+              <h2 class="personalData-subtitle personalData-subtitle--education"><span>faculdade eniac - (2014 - 2016)</span></h2>
             </div>
         </article>
 

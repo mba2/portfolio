@@ -8,49 +8,57 @@
     }
     //MODULE SUBCOMPONENTS
     &-title {
-    display: inline-block;
-    position: relative;
-    margin-bottom: 25px;
+        display: inline-block;
+        position: relative;
+        margin-bottom: 25px;
 
-    font-weight: 900;
-    letter-spacing: 1px;
-    font-size: 20px;
-    color: $pink;
+        font-weight: 900;
+        letter-spacing: 1px;
+        font-size: 20px;
+        color: $pink;
 
-    &:after {
-      content: "";
-      height: 3px;
-      width: 80%;
-      position: absolute;
-      bottom: -10px;
-      right: 0px;
+        @include breakpoint(min, 1024px) {
+            font-size: 26px;
+        }
 
-      background-color: $pink;
-    }
+        &:after {
+          content: "";
+          height: 3px;
+          width: 80%;
+          position: absolute;
+          bottom: -10px;
+          right: 0px;
+
+          background-color: $pink;
+        }
     }
 
     &-subtitle {
-    padding-left: 30px;
+        padding-left: 30px;
 
-    font-weight: 400;
-    font-size: 22px;
-    text-align: left;
-    color: $lightBlue;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: left;
+        color: $lightBlue;
 
-    span {
-      position: relative;
+        @include breakpoint(min,1024px) {
+            font-weight: 100;
+        }
 
-      &:after {
-        content: "";
-        height: 3px;
-        width: 80%;
-        position: absolute;
-        bottom: -5px;
-        left: 0;
+        span {
+          position: relative;
 
-        background-color: $lightBlue;
-      }
-    }
+          &:after {
+            content: "";
+            height: 3px;
+            width: 80%;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+
+            background-color: $lightBlue;
+          }
+        }
     }
 
     &-group {
@@ -71,42 +79,62 @@
 
       &--education {
         padding: 20px 0 8px;
+
+        @include breakpoint(min,568px) {
+            float: left;
+            padding: 7px 0 0; 
+        }
       }
     }
 
     &-line {
       color: $lightBlue;
       font-size: 20px;
+
+      @include breakpoint(min, 1024px) {
+          font-size: 25px;
+          font-weight: 100;
+      }
     }
 
     &-name {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 5vw;
-    letter-spacing: 1px;
-    color: $pink;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 5vw;
+        letter-spacing: 1px;
+        color: $pink;
 
-    @include breakpoint(min, 568px) {
-        width: 65%;
-        float: left;
+        @include breakpoint(min, 568px) {
+            width: 65%;
+            float: left;
 
-        text-align: left;
-        font-weight: 300;
-        font-size:4vw;
-    }
-    strong {
-      font-weight: 900;
-    }
+            text-align: left;
+            font-weight: 300;
+            font-size:4vw;
+        }
+
+        @include breakpoint(min, 1024px) {
+            font-size: 34px;
+        }
+
+        strong {
+          font-weight: 900;
+        }
     }
 
     &-info {
-    padding-top: 20px;
+        padding-top: 20px;
 
-    @include breakpoint(min, 568px) {
-        width: 35%;
-        float: left;
-        padding-top: 0;
-    }
+        @include breakpoint(min, 568px) {
+            width: 35%;
+            float: left;
+            padding-top: 0;
+        }
+
+        @include breakpoint(min, 1024px) {
+            margin-top: 10px;
+        }
+
     }
 
     &-contact {
@@ -119,13 +147,17 @@
         @include breakpoint(min, 568px) {
             display: table;
             width: 100%;
-            padding-bottom: 15px !important;
+            padding: 30px 0 15px;
 
             text-align: center;
 
             &::before {
                 width: 90% !important;
             }
+        }
+
+        @include breakpoint(min, 1024px) {
+            padding: 40px 0 20px;
         }
 
         //SUBCOMPONENT'S CHILDREN
@@ -146,6 +178,11 @@
 
             @include breakpoint(min, 568px) {
                 vertical-align: text-bottom;
+            }
+
+            @include breakpoint(min, 1024px) {
+                font-size: 27px;
+                font-weight: 100;
             }
         } //.personalData .personalData-text
 
@@ -197,6 +234,12 @@
         @include breakpoint(min,568px) {
             font-size: 15px;
         }
+
+        .personalData-text {
+            @include breakpoint(min,1024px) {
+                font-size: 21px;
+            }
+        }
     }
 
     &-age {
@@ -208,12 +251,27 @@
       }
 
     &-goal {
-      padding: 30px 0;
+      padding: 30px 0 45px;
 
       @include breakpoint(min, 568px) {
           width: 40%;
           float: left;
-          padding: 30px 0 !important;
+          padding: 30px 0;
+      }
+
+      @include breakpoint(min, 1024px) {
+          @include clearfix;
+          padding: 40px 0 0;
+      }
+
+      .personalData-subtitle {
+          @include breakpoint(min, 1024px) {
+              display: inline-block;
+              position: relative;
+              top: 3px;
+
+              font-weight: 100;
+          }
       }
     }
 
@@ -223,16 +281,25 @@
         @include breakpoint(min,568px) {
             width: 60%;
             float: left;
-            padding: 30px 0 !important;
+            padding: 30px 0;
 
             text-align: center;
+        }
+
+        @include breakpoint(min,1024px) {
+            @include clearfix;
+            padding: 40px 0 0;
+
+            text-align: left;
         }
 
         .personalData-title {
             margin-bottom: 10px;
 
-            @include breakpoint(min,568px) {
-
+            @include breakpoint(min,1024px) {
+                // vertical-align: top;
+                display: block;
+                float: left;
             }
         }
 

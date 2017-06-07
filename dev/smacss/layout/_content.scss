@@ -5,6 +5,7 @@
 .l-mainContent {
   position: relative;
   padding: 80px 4.5vw 0;
+  
   @include breakpoint(max,567px) {
       max-width: 500px;
       margin: 0 auto;
