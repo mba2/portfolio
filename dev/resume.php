@@ -156,12 +156,12 @@
         </article>
 
         <article class="personalData-goal">
-          <h1 class="personalData-title">goal</h1>
-          <h2 class="personalData-subtitle"><span>front end developer<span></h2>
+          <h1 class="personalData-title personalData-title--goal">goal</h1>
+          <h2 class="personalData-subtitle personalData-subtitle--goal"><span>front end developer<span></h2>
         </article>
 
         <article class="personalData-education">
-            <h1 class="personalData-title">education</h1>
+            <h1 class="personalData-title personalData-title--education">education</h1>
             <div class="personalData-group personalData-group--education">
               <h2 class="personalData-subtitle personalData-subtitle--education"><span>análise de sistemas<span></h2>
               <h2 class="personalData-subtitle personalData-subtitle--education"><span>faculdade eniac - (2014 - 2016)</span></h2>
@@ -189,50 +189,50 @@
           <div class="tabs-mainContent">
             <article class="tabs-content tabs-content--skills">
               <h1 class="tabs-title tabs-title--content">skills</h1>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders,  variables, @if/else, @each & partials</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config via SSH keys</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--english"><strong>english - </strong>fluent</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders,  variables, @if/else, @each & partials</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config via SSH keys</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--english"><strong>english - </strong>fluent</h2>
             </article>
+            
             <article class="tabs-content tabs-content--xp">
               <h1 class="tabs-title tabs-title--content">experience</h1>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders,  variables, @if/else, @each & partials</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config via SSH keys</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--english"><strong>english - </strong>fluent</h2>
-
+              <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders,  variables, @if/else, @each & partials</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config via SSH keys</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--english"><strong>english - </strong>fluent</h2>
             </article>
+
             <article class="tabs-content tabs-content--courses">
               <h1 class="tabs-title tabs-title--content">courses</h1>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders,  variables, @if/else, @each & partials</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config via SSH keys</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
-              <h2 clas="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
-                <h2 clas="tabs-contentHeading tabs-contentHeading--english"><strong>english - </strong>fluent</h2>
-
+              <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders,  variables, @if/else, @each & partials</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config via SSH keys</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
+              <h2 class="tabs-contentHeading tabs-contentHeading--english"><strong>english - </strong>fluent</h2>
             </article>
           </div>
         </div>

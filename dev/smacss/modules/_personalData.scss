@@ -31,6 +31,30 @@
 
           background-color: $pink;
         }
+
+        &--education {
+            @include breakpoint(min, 568px) {
+                margin-bottom: 30px !important;
+            }
+
+            @include breakpoint(min, 768px) {
+                margin-right: 20px;
+
+                font-size: 27px;
+            }
+        }
+
+        &--goal {
+            @include breakpoint(min, 568px) {
+                margin-bottom: 30px;
+            }
+
+            @include breakpoint(min, 768px) {
+                margin-right: 20px;
+
+                font-size: 27px;
+            }
+        }
     }
 
     &-subtitle {
@@ -39,7 +63,7 @@
         font-weight: 400;
         font-size: 22px;
         text-align: left;
-        color: $lightBlue;
+        color: $blue;
 
         @include breakpoint(min,1024px) {
             font-weight: 100;
@@ -47,17 +71,22 @@
 
         span {
           position: relative;
+          @include subtitleBorder;
+        }
 
-          &:after {
-            content: "";
-            height: 3px;
-            width: 80%;
-            position: absolute;
-            bottom: -5px;
-            left: 0;
+        &--goal {
+            padding-left: 5px;
+            @include breakpoint(min,568px) {
+                padding-left: 0;
+                margin-bottom: 30px;
+            }
+        }
 
-            background-color: $lightBlue;
-          }
+        &--education {
+            padding-left: 5px;
+            @include breakpoint(min,568px) {
+                padding-left: 0;
+            }
         }
     }
 
@@ -81,8 +110,12 @@
         padding: 20px 0 8px;
 
         @include breakpoint(min,568px) {
+            padding: 0;
+        }
+
+        @include breakpoint(min,768px) {
             float: left;
-            padding: 7px 0 0; 
+            padding-top: 7px;
         }
       }
     }
@@ -91,8 +124,8 @@
       color: $lightBlue;
       font-size: 20px;
 
-      @include breakpoint(min, 1024px) {
-          font-size: 25px;
+      @include breakpoint(min, 768px) {
+          font-size: 23 px;
           font-weight: 100;
       }
     }
@@ -113,8 +146,8 @@
             font-size:4vw;
         }
 
-        @include breakpoint(min, 1024px) {
-            font-size: 34px;
+        @include breakpoint(min, 768px) {
+            font-size: 32px;
         }
 
         strong {
@@ -131,7 +164,7 @@
             padding-top: 0;
         }
 
-        @include breakpoint(min, 1024px) {
+        @include breakpoint(min, 768px) {
             margin-top: 10px;
         }
 
@@ -156,7 +189,7 @@
             }
         }
 
-        @include breakpoint(min, 1024px) {
+        @include breakpoint(min, 768px) {
             padding: 40px 0 20px;
         }
 
@@ -180,8 +213,8 @@
                 vertical-align: text-bottom;
             }
 
-            @include breakpoint(min, 1024px) {
-                font-size: 27px;
+            @include breakpoint(min, 768px) {
+                font-size: 24px;
                 font-weight: 100;
             }
         } //.personalData .personalData-text
@@ -236,8 +269,8 @@
         }
 
         .personalData-text {
-            @include breakpoint(min,1024px) {
-                font-size: 21px;
+            @include breakpoint(min,768px) {
+                font-size: 20px;
             }
         }
     }
@@ -254,18 +287,18 @@
       padding: 30px 0 45px;
 
       @include breakpoint(min, 568px) {
-          width: 40%;
+          width: 38%;
           float: left;
           padding: 30px 0;
       }
 
-      @include breakpoint(min, 1024px) {
+      @include breakpoint(min, 768px) {
           @include clearfix;
           padding: 40px 0 0;
       }
 
       .personalData-subtitle {
-          @include breakpoint(min, 1024px) {
+          @include breakpoint(min, 768px) {
               display: inline-block;
               position: relative;
               top: 3px;
@@ -279,14 +312,14 @@
         padding-bottom: 40px;
 
         @include breakpoint(min,568px) {
-            width: 60%;
+            width: 62%;
             float: left;
-            padding: 30px 0;
+            padding: 30px 0 30px 7vw;
 
             text-align: center;
         }
 
-        @include breakpoint(min,1024px) {
+        @include breakpoint(min,768px) {
             @include clearfix;
             padding: 40px 0 0;
 
@@ -296,7 +329,7 @@
         .personalData-title {
             margin-bottom: 10px;
 
-            @include breakpoint(min,1024px) {
+            @include breakpoint(min,768px) {
                 // vertical-align: top;
                 display: block;
                 float: left;
@@ -313,3 +346,5 @@
 
     //MODULE'S MOFIFIERS
 }
+
+// MODULES, SUBCOMPONENTS ETC MIXINGS

@@ -1,0 +1,88 @@
+// MODULE
+.tabs {
+
+    //MODULE SUBCOMPONENTS
+    &-nav {
+        width: 100vw;
+        display: table;
+        table-layout: fixed;
+        margin-left: -4.5vw;
+
+        text-align: center;
+
+        //  THIS ADJUSTMENT IS REQUIRED 'CAUSE THE MAIN CONTAINER RECEIVES A max-width OF 500px AND GETS CENTERED...
+        @include breakpoint(min,500px) {
+            margin-left: calc( -4.5vw - ( (100vw - 500px) / 2) );
+        }
+
+        @include breakpoint(min,568px) {
+            width: auto;
+            margin: 0;
+        }
+        //SUBCOMPONENT MODIFIERS
+    }
+
+    &-tab {
+        display: table-cell;
+        padding: 25px 0;
+        background-color: $pink;
+
+        font-size: 17px;
+        font-weight: 700;
+        color: $darkBlue;
+
+        cursor: pointer;
+
+        &:not(:first-child) {
+            border-left: 1px solid #fff;
+        }
+
+        @include breakpoint(min,568px) {
+            width: 115px;
+        }
+        //SUBCOMPONENT MODIFIERS
+    }
+
+    &-title {
+        @extend .personalData-title;
+        //SUBCOMPONENT MODIFIERS
+    }
+
+    &-arrow {
+        //SUBCOMPONENT MODIFIERS
+    }
+
+    &-mainContent {
+        @include breakpoint(min,568px) {
+            border: 1px solid $lightBlue;
+        }
+        //SUBCOMPONENT MODIFIERS
+    }
+
+    &-content {
+        //SUBCOMPONENT MODIFIERS
+    }
+
+    &-contentHeading {
+        margin-bottom: 15px;
+
+        line-height: 35px;
+        font-weight: 400;
+        font-size: 22px;
+        text-align: left;
+        color: $darkBlue;
+        //SUBCOMPONENT MODIFIERS
+
+        //SUBCOMPONENT CHILDREN
+        strong {
+            @include subtitleBorder;
+            font-weight: 400;
+            color: $blue;
+        }
+    }
+
+    &-mainContent {
+        padding-top: 30px;
+        //SUBCOMPONENT MODIFIERS
+    }
+}
