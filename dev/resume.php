@@ -173,7 +173,7 @@
       <section class="developerData">
         <div class="tabs">
           <nav class="tabs-nav">
-            <div class="tabs-tab tabs-tab--skills">
+            <div class="tabs-tab tabs-tab--skills is-active">
               <span class-"tabs-title tabs-title--skills">skills</span>
               <i class="tabs-arrow"></i>
             </div>
@@ -187,7 +187,7 @@
             </div>
           </nav>
           <div class="tabs-mainContent">
-            <article class="tabs-content tabs-content--skills">
+            <article class="tabs-content tabs-content--skills is-active">
               <h1 class="tabs-title tabs-title--content">skills</h1>
               <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
               <h2 class="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
@@ -202,7 +202,7 @@
               <h2 class="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
               <h2 class="tabs-contentHeading tabs-contentHeading--english"><strong>english - </strong>fluent</h2>
             </article>
-            
+
             <article class="tabs-content tabs-content--xp">
               <h1 class="tabs-title tabs-title--content">experience</h1>
               <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
