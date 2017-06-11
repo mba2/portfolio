@@ -3,8 +3,10 @@
 .personalData {
     padding-top: 35px;
     $personalData : &;
+
     @include breakpoint(min, 568px) {
       @include clearfix();
+      margin-bottom: 45px;
     }
     //MODULE SUBCOMPONENTS
     &-title {
@@ -133,7 +135,8 @@
     &-name {
         text-transform: uppercase;
         text-align: center;
-        font-size: 5vw;
+        font-size: 7.5vw;
+        line-height: 1.2;
         letter-spacing: 1px;
         color: $pink;
 
@@ -289,7 +292,7 @@
       @include breakpoint(min, 568px) {
           width: 38%;
           float: left;
-          padding: 30px 0;
+          padding: 35px 0 0 0;
       }
 
       @include breakpoint(min, 768px) {
@@ -314,7 +317,7 @@
         @include breakpoint(min,568px) {
             width: 62%;
             float: left;
-            padding: 30px 0 30px 7vw;
+            padding: 35px 0 0 7vw;
 
             text-align: center;
         }
