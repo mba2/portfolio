@@ -7,6 +7,7 @@
         display: table;
         table-layout: fixed;
         margin-left: -4.5vw;
+        box-shadow: 0px 4px 1px 0px rgba(2, 2, 2, 0.22);
 
         text-align: center;
 
@@ -18,6 +19,8 @@
         @include breakpoint(min,568px) {
             width: auto;
             margin: 0;
+            width: 60%;
+            box-shadow: none;
         }
         //SUBCOMPONENT MODIFIERS
     }
@@ -32,9 +35,7 @@
         color: $darkBlue;
 
         cursor: pointer;
-        transition: all .3s cubic-bezier(0.4,0,0.2,1);
-        transform: translate3d(0,0,0)  perspective(1px) scale(1.2);
-        // transform: translate3d(0,0,0)  perspective(1px) scale(1.2);
+        transition: all .3s ease-in-out;
 
         //SUBCOMPONENT PSEUDOCLASSES
         &:not(:first-child) {
@@ -45,17 +46,11 @@
 
 
         }
+
         //SUBCOMPONENT STATES
-        &.is-active {
-            // transform: scale(1);
-            /* width: 1000px; */
-            backface-visibility: hidden;
-            -webkit-font-smoothing: antialiased !important;
-            box-shadow: 1px 3px 4px 0px rgba(0, 0,0,0.3);
-
-            span {
-
-            }
+        &[data-state='is-active'] {
+            background-color: $darkBlue;
+            color: $pink;
         }
 
         //SUBCOMPONENT MODIFIERS
@@ -99,7 +94,7 @@
                 position: absolute;
                 top: 70px;
                 bottom: 0;
-                left: 50%;
+                left: calc(50% - 5px);
                 background: $blue;
             }
         }
@@ -107,9 +102,16 @@
     }
 
     &-content {
+        display: none;
+
         @include breakpoint(min,568px) {
             @include clearfix;
         }
+        //SUBCOMPONENT STATES
+        &[data-state='is-active'] {
+            display: block;
+        }
+
         //SUBCOMPONENT MODIFIERS
     }
 
@@ -135,6 +137,10 @@
             @include breakpoint(min,568px) {
                 clear: left;
             }
+        }
+
+        &:nth-child(2n+2) {
+            clear: both;
         }
 
         //SUBCOMPONENT MODIFIERS

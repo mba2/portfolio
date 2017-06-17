@@ -8,6 +8,10 @@
       @include clearfix();
       margin-bottom: 45px;
     }
+
+    @include breakpoint(min, 1024px) {
+      margin-bottom: 55px;
+    }
     //MODULE SUBCOMPONENTS
     &-title {
         display: inline-block;
@@ -68,7 +72,6 @@
         color: $blue;
 
         @include breakpoint(min,1024px) {
-            font-weight: 100;
         }
 
         span {
@@ -123,13 +126,32 @@
     }
 
     &-line {
-      color: $lightBlue;
-      font-size: 20px;
+      color: $blue;
+      font-size: 23px;
 
       @include breakpoint(min, 768px) {
-          font-size: 23 px;
-          font-weight: 100;
+          font-size: 22px;
+          font-weight: 400;
       }
+
+      a {
+          display: inline-block;
+
+          &:hover {
+
+          }
+      }
+    }
+
+    &-text {
+        transition: color .4s ease-in-out;
+
+        a:hover & {
+
+            @include breakpoint(min,1024px) {
+                color: $pink;
+            }
+        }
     }
 
     &-name {
@@ -183,7 +205,7 @@
         @include breakpoint(min, 568px) {
             display: table;
             width: 100%;
-            padding: 30px 0 15px;
+            padding: 40px 0 15px;
 
             text-align: center;
 
@@ -193,7 +215,7 @@
         }
 
         @include breakpoint(min, 768px) {
-            padding: 40px 0 20px;
+            padding: 45px 0 20px;
         }
 
         //SUBCOMPONENT'S CHILDREN
@@ -202,10 +224,6 @@
 
           @include breakpoint(min, 568px) {
               display: table-cell;
-
-              &:first-of-type {
-                  text-align: left;
-              }
           }
         } // .personalData .personalData-line
 
@@ -218,23 +236,9 @@
 
             @include breakpoint(min, 768px) {
                 font-size: 24px;
-                font-weight: 100;
+                font-weight: 500;
             }
         } //.personalData .personalData-text
-
-        .icon {
-          display: inline-block;
-          width: 30px;
-          margin-right: 10px;
-
-          text-align: center;
-          @include breakpoint(min, 568px) {
-              width: auto;
-              margin-right: 0;
-
-              text-align: left;
-          }
-        } // .icon
 
         .icon-svg {
             fill: $pink;
@@ -260,7 +264,7 @@
         font-size: 22px;
 
         @include breakpoint(min,568px) {
-            font-size: 18px;
+            font-size: 22px;
         }
     }
 
@@ -268,7 +272,7 @@
         font-size: 19px;
 
         @include breakpoint(min,568px) {
-            font-size: 15px;
+            font-size: 18px;
         }
 
         .personalData-text {
@@ -292,7 +296,7 @@
       @include breakpoint(min, 568px) {
           width: 38%;
           float: left;
-          padding: 35px 0 0 0;
+          padding: 45px 0 0 0;
       }
 
       @include breakpoint(min, 768px) {
@@ -300,13 +304,15 @@
           padding: 40px 0 0;
       }
 
+      @include breakpoint(min, 1024px) {
+          padding: 55px 0 0;
+      }
+
       .personalData-subtitle {
           @include breakpoint(min, 768px) {
               display: inline-block;
               position: relative;
               top: 3px;
-
-              font-weight: 100;
           }
       }
     }
@@ -327,6 +333,10 @@
             padding: 40px 0 0;
 
             text-align: left;
+        }
+
+        @include breakpoint(min, 1024px) {
+            padding: 55px 0 0;
         }
 
         .personalData-title {
