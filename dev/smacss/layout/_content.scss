@@ -4,10 +4,43 @@
 
 .l-mainContent {
   position: relative;
-  padding: 80px 4.5vw 0;
-  
-  @include breakpoint(max,567px) {
-      max-width: 500px;
-      margin: 0 auto;
+  margin-top: 80px;
+
+  // HOME
+  &--home {
+    min-height: calc(100vh - 80px);
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 20vh;
+      left: 50vw;
+      transform: translate(-50vw,-50vh);
+      // top: 20%;
+      // left: 50%;
+      // transform: translate(-50%,-40%);
+
+      @media SCREEN AND (orientation:landscape) {
+        top: -10vh;
+
+
+        // position: absolute;
+        // top: -50%;
+        // left: 50%;
+        // transform: translate(-50%,-40%);
+      }
+    }
   }
+
+  //RESUME
+  &--resume {
+    padding: 80px 4.5vw 0;
+
+    @include breakpoint(max,567px) {
+      max-width: 500px;
+      margin: 80px auto 0;
+    }
+  }
+
+  //MODULE's CHILDREN
 }
