@@ -77,8 +77,13 @@
         </div>
     </header>
 
-    <main class="l-main-content">
-      <img src="./img/home-bg.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
+    <main class="l-mainContent l-mainContent--home">
+      <picture>
+        <source srcset="img/home-bg-full-hd.jpg" media="(min-width:1600px)">
+        <source srcset="img/home-bg-desktop-1280.jpg" media="(min-width:1280px)">
+        <source srcset="img/home-bg-mobile.jpg" media="(min-width:768px)">
+        <img src="img/home-bg-mobile.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
+      </picture>
     </main>
 
     <button id="js_back-to-top" class="btn btn-back-to-top">
@@ -100,6 +105,7 @@
        </g>
       </svg>
     </button>
+
     <footer id="js_footer" class="l-footer">
       <div id="js_footerWrapper" class="wrapper">
         <ul id="js_footerMenu" class="menu menu-footer">
