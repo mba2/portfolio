@@ -79,10 +79,10 @@
 
     <main class="l-mainContent l-mainContent--home">
       <picture>
-        <source srcset="img/home-bg-full-hd.jpg" media="(min-width:1600px)">
-        <source srcset="img/home-bg-desktop-1280.jpg" media="(min-width:1280px)">
-        <source srcset="img/mobile02.jpg" media="(min-width:768px)">
-        <img src="img/mobile02.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
+        <source srcset="img/home-bg-03.jpg" media="(min-width:1200px)">
+        <source srcset="img/home-bg-02.jpg" media="(min-width:768px)">
+        <source srcset="img/home-bg-01.jpg" media="(min-width:0px)">
+        <img src="img/home-bg-01.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
       </picture>
       <div class="home">
           <h1 style="display:none;">mario brusarosco</h1>
