@@ -68,7 +68,11 @@
     bottom: 20px;
     padding: 0;
     right: 5%;
-    z-index: 1;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: customTrans(all);
     //.btn.back-to-top.is-visible {
     &.is-visible {
       display: inline-block;
