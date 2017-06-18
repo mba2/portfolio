@@ -81,9 +81,14 @@
       <picture>
         <source srcset="img/home-bg-full-hd.jpg" media="(min-width:1600px)">
         <source srcset="img/home-bg-desktop-1280.jpg" media="(min-width:1280px)">
-        <source srcset="img/home-bg-mobile.jpg" media="(min-width:768px)">
-        <img src="img/home-bg-mobile.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
+        <source srcset="img/mobile02.jpg" media="(min-width:768px)">
+        <img src="img/mobile02.jpg" alt="Mario Brusarosco" title="Mario Brusarosco" />
       </picture>
+      <div class="home">
+          <h1 style="display:none;">mario brusarosco</h1>
+          <p class="home-title home-title--front">front end</p>
+          <p class="home-title home-title--dev">developer</p>
+      </div>
     </main>
 
     <button id="js_back-to-top" class="btn btn-back-to-top">

@@ -13,7 +13,7 @@ var Header = {
       var scrollTop       = scrollData[1];      // STORE THE CURRENT SCROLL TOP VALUE
 
       if( typeof scrollTop === undefined || scrollTop === null ) {        // TERMINATE THE FUNCTION IF A PAGE SCROLL VALUE IS NOT PASSED
-        console.log("A value for page's scroll was not passed to headerBehavior()");
+        console.warn("A value for page's scroll was not passed to headerBehavior()");
         return false;
       }
 
