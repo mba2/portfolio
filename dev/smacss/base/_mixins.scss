@@ -40,9 +40,12 @@
 //BREAKPOINTS
 
 @mixin breakpoint($minOrMax, $width , $media: "screen"){
-      @media #{$media} AND (#{$minOrMax}-width : $width) {
-    @content;
-  }
+    //REMOVE ONE PIXEL IF A "max" UNIT IS DESIRED
+    @if $minOrMax == max { $width : $width - 1; }
+
+    @media #{$media} AND (#{$minOrMax}-width : $width) {
+        @content;
+    }
 }
 
 
