@@ -57,7 +57,5 @@
       </menu>
     </nav>
 
-    <div id="js_headerProgBar" class="progBar progBar-header">
-
-    </div>
+  <div id="js_headerProgBar" class="progBar progBar-header"></div>
 </header>
