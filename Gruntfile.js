@@ -51,6 +51,7 @@ module.exports = function( grunt ){
             "expand" : true,
             "cwd": "<%= dir.source %>",
             "src" : ["?(resources||tests)/**/*",
+                     "**/index.php"
                     ],
             "dest" : "<%= dir.dev %>/"
           }
@@ -123,9 +124,8 @@ module.exports = function( grunt ){
 
   grunt.registerTask("dev",[
     "clean",
-    "copy:pureCSS",
-    // "copy:dev",
-    // "responsive_images",
+    "copy:dev",
+    "responsive_images",
     "watch"
   ]);
 
