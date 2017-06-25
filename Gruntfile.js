@@ -20,6 +20,7 @@ module.exports = function( grunt ){
     },
     //COPY TASK
     "copy" : {
+      // THIS TARGET AIMS TO ALL PROJECT'S ASSETS
       "dev" : {
         "files" : [
           {
@@ -31,17 +32,7 @@ module.exports = function( grunt ){
           }
         ]
       },
-      "build" : {
-        "files" : [
-          {
-            "expand" : true,
-            "cwd": "<%= dir.source %>",
-            "src" : ["?(public||resources||tests)/**/*",
-                    ],
-            "dest" : "<%= dir.currTask %>"
-          }
-        ]
-      },
+      // THIS TARGET AIMS TO ALL PROJECT'S FILES AND FOLDERS PREPARING THE RESULT TO BE DEPLOYED
       "deploy" : {
         "files" : [
           {
@@ -53,6 +44,7 @@ module.exports = function( grunt ){
           }
         ]
       },
+      // THIS TARGET TRANSFERS ONLY BACKEND ASSETS
       "backEnd" : {
         "files" : [
           {
@@ -64,6 +56,7 @@ module.exports = function( grunt ){
           }
         ]
       },
+      // THIS TARGET TRANSFERS ONLY FILES CONTAINING CSS
       "pureCSS" : {
         "files" : [
           {
@@ -111,11 +104,12 @@ module.exports = function( grunt ){
        "pureCSS" : {
          files : ["<%= dir.source %>/public/**/*.css"],
          tasks : ["copy:pureCSS"],
-         options : { "event" : ["added","modified"] }
+         options : { "event" : ["added","changed"] }
        },
        "deletedFiles" : {
          files : ["<%= dir.source %>/public/**/*.css"],
          tasks : ["copy:dev"],
+        //  tasks : ["copy:pureCSS"],
          options : { "event" : ["deleted"] }
        }
      }
@@ -129,16 +123,19 @@ module.exports = function( grunt ){
 
   grunt.registerTask("dev",[
     "clean",
-    "copy:dev",
-    "responsive_images",
+    "copy:pureCSS",
+    // "copy:dev",
+    // "responsive_images",
     "watch"
   ]);
 
-  grunt.registerTask("build",[
+  grunt.registerTask("deploy",[
     "clean",
     "copy:build",
     "responsive_images",
     // "watch"
   ]);
+
+  grunt.registerTask("default", "dev");
 
 };
