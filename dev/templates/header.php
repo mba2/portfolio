@@ -49,8 +49,8 @@
                 <a href="#" class="dropdown-link">code editor</a>
               </li>
             </ul>
-          </li>
-          <li class="menu-listItem">
+          </li>-->
+          <!--<li class="menu-listItem">
             <a id="" class="link link-menu" href="#">contact</a>
           </li>-->
         </ul>
