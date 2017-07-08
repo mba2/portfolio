@@ -15,7 +15,7 @@ module.exports = function(grunt){
           {
             expand: true,
             cwd  : '<%= dirs.development %>',
-            src  : ["*.php","*.html"],
+            src  : ["**/*.php","**/*.html"],
             dest : '<%= dirs.production %>'
           },
           {
@@ -150,8 +150,8 @@ module.exports = function(grunt){
     watch : {
       "html_PHP" : {
         files : [
-                  "<%= dirs.development %>/*.php",
-                  "<%= dirs.development %>/*.html"
+                  "<%= dirs.development %>/**/*.php",
+                  "<%= dirs.development %>/**/*.html"
                 ],
         tasks : [
                   "copy","injector","watch"
