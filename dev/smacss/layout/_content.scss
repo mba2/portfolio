@@ -7,14 +7,15 @@
 }
 .l-mainContent {
   position: relative;
-  margin-top: 80px;
-  padding: 10px 4.5vw;
+  // margin-top: 80px;
+  padding: 80px 4.5vw 10px;
 
   // HOME
   &--home {
     height: 300px;
-    height: calc(100vh - 80px);
-    padding: 0;
+    // height: calc(100vh - 80px);
+    height: calc(100vh);
+    padding: 80px 0 0;
 
     overflow: hidden;
     z-index: 1;
@@ -26,6 +27,8 @@
 
     img {
       position: absolute;
+      top:0;
+      left:0;
     //   top: 20vh;
     //   left: 50vw;
     //   transform: translate(-50vw,-50vh);

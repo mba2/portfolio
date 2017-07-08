@@ -63,6 +63,10 @@
     //  .menu-header .link-menu //
     .menu-header & {
       padding: 0 30px;
+
+      @include breakpoint(min,768px) {
+          padding: 0;
+      }
     }
     //  link-socials .link-menu //   MENU LINKS ARE GROUPED INSIDE A WRAPPER FOR SOCIAL MEDIA LINKS
     .link-socials & {
