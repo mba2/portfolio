@@ -67,6 +67,10 @@
       @include breakpoint(min,768px) {
           padding: 0;
       }
+      @include breakpoint(min,1024px) {
+          height: 100%;
+          padding: 10px 15px 0;
+      }
     }
     //  link-socials .link-menu //   MENU LINKS ARE GROUPED INSIDE A WRAPPER FOR SOCIAL MEDIA LINKS
     .link-socials & {

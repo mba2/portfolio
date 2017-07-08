@@ -3,7 +3,7 @@
   width: 100%;
   text-align: center;
   @include breakpoint(min,768px) {      // MAKE THE MENU FIT THE ENTIRE VERTICAL SPACE OF <nav> ELEMENT
-    // height: 100%;
+    height: 100%;
   };
   //MODULE VARIATIONS
   &-header {
@@ -11,7 +11,7 @@
       // @include clearfix();
       // float: right;
       // display: inline-block;
-      //
+      height: 100%;
       text-align: right;
     }
   }
@@ -29,9 +29,7 @@
       width: 100%;
     }
     @include breakpoint(min,768px) {
-      // TABLET BREAKPOINT MAKE THE LIST FIT THE ENTIRE VERTICAL SPACE OF MENU ELEMENT
-      padding-top: 10px; 
-    //   height: 100%;
+      height: 100%;
     //   display: table;
     //   table-layout: fixed;
     //   width: 100%;
@@ -39,7 +37,8 @@
     @include breakpoint(min,1024px) {
       // float: right;
       // width: auto !important;
-      // display: inline-block;
+      display: block;
+      table-layout: unset;
     }
   }
   // .menu-listItem
@@ -67,16 +66,24 @@
     @include breakpoint(min,1024px) {
       display: inline-block;
       width: auto;
-
+      margin-left: -3px;
 
       font-size: 25px;
       font-weight: 100;
       @include linkHoverEffect();
+
+      // WHEN  .menu-listItem IS HOVERED
+      &:hover {
+      
+        > a {
+          color: #FFF;
+        }
+      }
     }
     // VARIATIONS
     // .menu-listItem .has-drop
     &.has-drop {
-      position: relative;
+
       // .menu-listItem.has-drop:hover
       &:hover {
         .dropdown {
