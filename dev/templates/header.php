@@ -39,17 +39,17 @@
               </li>
             </ul>
           </li>-->
-          <!--<li class="menu-listItem has-drop">
-            <a id="" class="link link-menu" href="/desk-apps">desktop apps</a>
+          <li class="menu-listItem has-drop">
+            <a id="" class="link link-menu" href="/desk-apps">projects</a>
             <ul class="dropdown dropdown-header">
               <li class="dropdown-item">
-                <a href="#" class="dropdown-link">syntax guide</a>
+                <a href="./syntax-guide" class="dropdown-link">syntax guide</a>
               </li>
-              <li class="dropdown-item">
+              <!--<li class="dropdown-item">
                 <a href="#" class="dropdown-link">code editor</a>
-              </li>
+              </li>-->
             </ul>
-          </li>-->
+          </li>
           <!--<li class="menu-listItem">
             <a id="" class="link link-menu" href="#">contact</a>
           </li>-->
