@@ -127,6 +127,11 @@ module.exports = function (grunt) {
 			}
 		},
 
+		//JS PROCESS
+		uglify : {
+
+		},
+
 		// WATCH PROCESS
 		watch: {
 			// WATCH - ADITION AND MOFIICATION PROCESS
@@ -192,6 +197,7 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.loadNpmTasks("grunt-responsive-images");
 	grunt.loadNpmTasks("grunt-contrib-sass");
+	grunt.loadNpmTasks("grunt-contrib-uglify");
 	grunt.loadNpmTasks("grunt-contrib-watch");
 
 
@@ -200,6 +206,7 @@ module.exports = function (grunt) {
 		"copy",
 		// "responsive_images",
 		"sass:dev",
+		"uglify:dev",
 		"watch"
 	]);
 
