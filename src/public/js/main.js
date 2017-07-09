@@ -1,9 +1,8 @@
 $(document).ready(function(){
-  Header.menu.toggleBehavior();
-  // var header = Header.init();
-
+  Header.initOnLoad();
+  Tabs.init();
 });
 
 $(document).on("scroll", function(){
-  Header.headerBehavior();
+  Page.scrollDirection();
 });

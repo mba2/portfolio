@@ -3,23 +3,27 @@ module.exports = function (grunt) {
 	grunt.initConfig({
 		// FOLDERS PATHS, STORED IN VARIABLES
 		dir: {
-			"source": "src",
-			"dev": "dev-test",
-			"deploy": "deploy",
-			"css": "scss",
-			"js": "js",
-			"fonts": "fonts",
-			"images": "img",
-			"currTask": grunt.cli.tasks[0] || "dev"
+			source		: "src",
+			dev	    	: "dev-test",
+			deploy		: "deploy",
+			public 		: "public", 
+			resources	: "resources", 
+			tests		: "tests", 
+			styles		: "styles",
+			js			: "js",
+			fonts		: "fonts",
+			images		: "img",
+			currTask	: grunt.cli.tasks[0] || "dev"
 		},
-		//CLEAN TASK
+		//CLEAN PROCESS
 		clean: {
-			"target" : { "src": "<%= dir.currTask %>/" },
-			"public_PHP_HTML" : {  "src": "<%= dir.dev %>/public/*.{php,html}"},
-			"backEnd" : { "src" : "<%= dir.dev %>/*(resources|tests)"}	
+			target 				: { "src" : "<%= dir.currTask %>/" },
+			public_PHP_HTML 	: { "src" : "<%= dir.dev %>/<%= dir.public %>/*.{php,html}"},
+			backEnd 			: { "src" : "<%= dir.dev %>/*(<%= dir.resources %>|<%= dir.tests %>)"},	
+			sass 				: { "src" : "<%= dir.dev %>/<%= dir.public %>/<%= dir.styles %>/**/*.css"},	
 		},
-		//COPY TASK
-		"copy": {
+		//COPY PROCESS
+		copy: {
 			// THIS TARGET AIMS TO ALL PROJECT'S ASSETS
 			// "dev": {
 			// 	"files": [{
@@ -46,33 +50,33 @@ module.exports = function (grunt) {
 			// },
 
 			// THIS TARGET TRANSFERS ONLY ALTERED BACKEND ASSETS
-			"backEnd": {
-				"files": [{
-					"expand": true,
-					"cwd": "<%= dir.source %>",
-					"src": ["*(resources||tests)/**/*", ],
-					"dest": "<%= dir.dev %>/"
+			backEnd: {
+				files: [{
+					expand	: true,
+					cwd		: "<%= dir.source %>",
+					src		: ["*(<%= dir.resources %>||<%= dir.tests %>)/**/*", ],
+					dest	: "<%= dir.dev %>/"
 				}]
 			},
 
 			// THIS TARGET TRANSFERS ONLY ALTERED 'PUBLIC' FILES (.php files or .html files)
-			"public_PHP_HTML": {
-				"files": [{
-					"expand": true,
-					"cwd": "<%= dir.source %>",
-					"src": "public/*.{php,html}",
-					"dest": "<%= dir.dev %>/"
+			public_PHP_HTML: {
+				files: [{
+					expand	: true,
+					cwd		: "<%= dir.source %>",
+					src		: "<%= dir.public %>/*.{php,html}",
+					dest	: "<%= dir.dev %>/"
 				}]
 			},
 
 			// // THIS TARGET TRANSFERS ONLY ALTERED FILES CONTAINING CSS
-			"pureCSS": {
-				"files": [{
-					"expand": true,
-					"cwd": "<%= dir.source %>",
-					"src": ["public/**/*.css"],
-					"dest": "<%= dir.dev %>/public/styles",
-					"flatten": true
+			pureCSS: {
+				files: [{
+					expand: true,
+					flatten: true,
+					cwd: "<%= dir.source %>",
+					src: ["<%= dir.public %>/**/*.css"],
+					dest: "<%= dir.dev %>/<%= dir.public %>/<%= dir.styles %>",
 				}]
 			},
 		},
@@ -99,61 +103,95 @@ module.exports = function (grunt) {
 				}]
 			}
 		},
+
+		//SASS PROCESS
+		sass : {
+			dev : {
+				options : {
+					trace 		: true,
+					lineNumbers	: true,
+					update		: true,
+				},
+				files : [{
+					expand 	: true,
+					cwd    	: "<%= dir.source %>/<%= dir.public %>/<%= dir.styles %>",
+					src	 	: "*.scss",
+					dest	: "<%= dir.dev %>/<%= dir.public %>/<%= dir.styles %>"
+				}]
+			},
+			
+			deploy : {
+				options : {
+					style : "compressed"
+				}
+			}
+		},
+
+		// WATCH PROCESS
 		watch: {
-
-			"backEnd": {
-			  files: ["<%= dir.source %>/?(resources|tests)/**/*"],
-			  tasks: ["copy:backEnd"],
-			  options: {"event": ["added","changed"]}
+			// WATCH - ADITION AND MOFIICATION PROCESS
+			backEnd: {
+			  files		: ["<%= dir.source %>/?(<%= dir.resources %>|<%= dir.tests %>)/**/*"],
+			  tasks		: ["copy:backEnd"],
+			  options	: {event: ["added","changed"]}
 			},
 
-			"public_PHP_HTML": {
-				files: ["<%= dir.source %>/public/*.{php,html}"],
-				tasks: ["copy:public_PHP_HTML"],
-				options: { "event": ["added", "changed"] }
+			public_PHP_HTML: {
+				files	: ["<%= dir.source %>/<%= dir.public %>/*.{php,html}"],
+				tasks	: ["copy:public_PHP_HTML"],
+				options	: { event: ["added", "changed"] }
+			},
+
+			sass : {
+				files 	: ["<%= dir.source %>/<%= dir.public %>/**/*.scss"],
+				tasks 	: ["sass:dev"],
+				options	: {event: ["added","changed"]}
+			},
+			
+			pureCSS: {
+			  files: ["<%= dir.source %>/public/**/*.css"],
+			  tasks: ["copy:pureCSS"],
+			  options: {
+			    event: ["added", "changed"]
+			  }
 			},
 
 
-			// "pureCSS": {
-			//   files: ["<%= dir.source %>/public/**/*.css"],
-			//   tasks: ["copy:pureCSS"],
-			//   options: {
-			//     "event": ["added", "changed"]
-			//   }
-			// },
-
-			// "deletedCSS": {
-			//   files: ["<%= dir.source %>/public/**/*.css"],
-			//   tasks: ["copy:dev"],
-			//   //  tasks : ["copy:pureCSS"],
-			//   options: {
-			//     "event": ["deleted"]
-			//   }
-			// },
-
-			"deletedBackEnd" : {
-				"files" : ["<%= dir.source %>/?(resources|tests)/**/*"],
-				"tasks" : [
+			// WATCH - DELETE PROCESS
+			deleted_backEnd : {
+				files : ["<%= dir.source %>/?(<%= dir.resources %>|<%= dir.tests %>)/**/*"],
+				tasks : [
 					"clean:backEnd",
 					"copy:backEnd"
 				],
-				"options" : { "event": "deleted"}
+				options : { event : "deleted"}
 			},
 
-			"deleted_public_PHP_HTML": {
-				files: ["<%= dir.source %>/public/*.{html,php}"],
+			deleted_public_PHP_and_HTML: {
+				files: ["<%= dir.source %>/<%= dir.public %>/*.{html,php}"],
 				tasks: [
 					"clean:public_PHP_HTML",
 					"copy:public_PHP_HTML"
 				],
-				options: {"event": ["deleted"]}
+				options: {event : ["deleted"]}
 			},
+
+			deleted_sass_and_css : {
+				files 	: ["<%= dir.source %>/<%= dir.public %>/<%= dir.styles %>/*.{scss,css}"],
+				tasks 	: [
+					"clean:sass",
+					"sass:dev"
+				],
+				options : {event : ["deleted"]}
+
+			}
 		}
 	});
 	// LOAD TASKS
 	grunt.loadNpmTasks("grunt-contrib-clean");
 	grunt.loadNpmTasks("grunt-contrib-copy");
 	grunt.loadNpmTasks("grunt-responsive-images");
+	grunt.loadNpmTasks("grunt-contrib-sass");
 	grunt.loadNpmTasks("grunt-contrib-watch");
 
 
@@ -161,6 +199,7 @@ module.exports = function (grunt) {
 		"clean:target",
 		"copy",
 		// "responsive_images",
+		"sass:dev",
 		"watch"
 	]);
 
