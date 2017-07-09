@@ -4,7 +4,7 @@ module.exports = function (grunt) {
 		// FOLDERS PATHS, STORED IN VARIABLES
 		dir: {
 			"source": "src",
-			"dev": "dev",
+			"dev": "dev-test",
 			"deploy": "deploy",
 			"css": "scss",
 			"js": "js",
