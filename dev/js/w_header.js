@@ -59,8 +59,22 @@ var Header = {
       });
     }
   },
+  
+  dropdown : function() {
+    var dropdowns = document.querySelectorAll(".js-dropdown-arrow");
+        dropdowns.forEach(function(node){
+          node.addEventListener("click", function(){
+            console.log(this);
+            this.parentNode.classList.toggle("is-active");
+          })
+        });
+    console.log(dropdowns);
+    console.log(typeof dropdowns);
+  },
+
   initOnLoad : function() {
     this.menu.toggleBehavior();
     this.overlay();
+    this.dropdown();
   }
 };

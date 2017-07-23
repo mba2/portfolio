@@ -1,18 +1,13 @@
 .dropdown {
+  height: 0;
   display: none;
-  position: absolute;
-
+  
   visibility: hidden;
   opacity: 0;
   transition: customTrans(visibility, $time: .65s),
               customTrans(opacity, $time: .65s);
 
-  @include breakpoint(min,1024px) {
-    display: block;
-  }
-  // MODULE PSEUDO CLASSES
-  // MODULE STATES
-  // MODULE VARIATIONS
+  // MODULE PSEUDO CLASSES , STATES, VARIATIONS
   &-header {
     width: 181px;
     background: rgb(255, 255, 255);
@@ -20,18 +15,47 @@
     left: 0;
 
     line-height: 60px;
+
+
+    @include breakpoint(min,1024px) {
+      position: absolute;
+    }
   }
   // MODULE CHILD ELEMENTS
+  &-arrow {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url(../img/mobile-dropdown-arrow.svg) no-repeat center 15px;
+    background-size: 20px auto;
+
+    transform: rotate(180deg);
+    cursor: pointer;
+    // HIDE THIS ELEMENT ON DESKTOP
+    @include breakpoint(min,1024px) {display: none;}
+
+    .menu-listItem.is-active & {
+      transform: rotate(0deg);
+    }
+  }
 
   // .dropdown-item
   &-item {
-    border: 1px solid $pink;
+    background-color: $darkBlue;
+    color: $pink;
+    font-size: 14px;
 
-    transition: customTrans(background-color),
+    @include breakpoint(min,1024px) {
+      border: 1px solid $pink;
+      transition: customTrans(background-color),
                 customTrans(color);
+    }
     // .dropdown-item:first-child
     &:first-child {
-      border-top-width: 4px;
+      // border-top-width: 4px;
     }
     // .dropdown-item:hover
     // .dropdown-item:active
@@ -44,7 +68,6 @@
   }
   // .dropdown-link
   &-link {
-    font-size: 20px;
     font-weight: 500;
   }
 }
