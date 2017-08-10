@@ -9,12 +9,12 @@
 
   // MODULE PSEUDO CLASSES , STATES, VARIATIONS
   &-header {
-    width: 181px;
     background: rgb(255, 255, 255);
     top: calc(100% - 1px);
     left: 0;
 
     line-height: 60px;
+    // width: 181px;
 
 
     @include breakpoint(min,1024px) {
@@ -34,6 +34,11 @@
 
     transform: rotate(180deg);
     cursor: pointer;
+
+    @include breakpoint(min,768px) {
+      background-position: center 25px;
+    }
+    
     // HIDE THIS ELEMENT ON DESKTOP
     @include breakpoint(min,1024px) {display: none;}
 

@@ -15,31 +15,7 @@
         <ul id="js_menuList" class="menu-list">
           <li class="menu-listItem">
             <a id="" class="link link-menu" href="./resume.php">resume</a>
-            <span class="dropdown-arrow js-dropdown-arrow"></span>
           </li>
-          <!--<li class="menu-listItem has-drop">
-            <a id="" class="link link-menu" href="/snippets">snippets</a>
-            <ul class="dropdown dropdown-header">
-              <li class="dropdown-item">
-                <a class="dropdown-link" href="#">link 1</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="dropdown-link" href="#">link 2</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="dropdown-link" href="#">link 3</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="dropdown-link" href="#">link 4</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="dropdown-link" href="#">link 5</a>
-              </li>
-              <li class="dropdown-item">
-                <a class="dropdown-link" href="#">see all (15)</a>
-              </li>
-            </ul>
-          </li>-->
           <li class="menu-listItem has-drop">
             <a id="" class="link link-menu" href="/desk-apps">projects</a>
             <span class="dropdown-arrow js-dropdown-arrow"></span>
@@ -47,14 +23,11 @@
               <li class="dropdown-item">
                 <a href="./syntax-guide" class="dropdown-link">syntax guide</a>
               </li>
-              <!--<li class="dropdown-item">
-                <a href="#" class="dropdown-link">code editor</a>
-              </li>-->
+              <li class="dropdown-item">
+                <a href="./code-editor" class="dropdown-link">code-editor</a>
+              </li>
             </ul>
           </li>
-          <!--<li class="menu-listItem">
-            <a id="" class="link link-menu" href="#">contact</a>
-          </li>-->
         </ul>
       </menu>
     </nav>
