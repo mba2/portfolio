@@ -63,7 +63,7 @@
       height: 100%;
     }
     @include breakpoint(min,1024px) {
-      height: 55px;
+      // height: 55px;
       display: inline-block;
       width: auto;
       margin-left: -3px;
@@ -91,7 +91,14 @@
         .dropdown {
           visibility: visible;
           opacity: 1;
+          position: absolute;
           transition: customTrans(opacity, $time: .4s);
+          width: 100%;
+          box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.38);
+
+          @include breakpoint(min,667px) {
+            margin-top: 2px;
+          }
         }
       }
 
