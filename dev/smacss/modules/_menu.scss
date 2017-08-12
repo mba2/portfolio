@@ -48,6 +48,7 @@
     line-height: 55px;
     text-align: center;
     font-size: 16px;
+    height: 55px;
 
     &:not(:last-child) {
       border-bottom: 1px solid $pink;
@@ -85,32 +86,24 @@
       position: relative;
 
       // ON HOVER OR WITH A 'is-active' CLASS...
-      &:hover,
       &.is-active {
 
         .dropdown {
           visibility: visible;
           opacity: 1;
-          position: absolute;
           transition: customTrans(opacity, $time: .4s);
-          width: 100%;
-          box-shadow: 1px 1px 4px 1px rgba(255, 255, 255, 0.38);
+        }
+      }
 
-          @include breakpoint(min,667px) {
-            margin-top: 2px;
+      &:hover {
+        @include breakpoint(min,1024px) {
+          .dropdown {
+            visibility: visible;
+            opacity: 1;
+            transition: customTrans(opacity, $time: .4s);
           }
         }
       }
-
-      &.is-active {
-
-        .dropdown {
-          height: auto;
-          display: block;
-
-        }
-      }
-
     }
     // .menu-listItem PSEUDO CLASSES
     // .menu-listItem CHILDREN ELEMENTS
