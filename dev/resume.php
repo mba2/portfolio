@@ -160,7 +160,14 @@
 
         <article class="tabs-content tabs-content--courses" data-tab-id="courses">
           <h1 class="tabs-title tabs-title--content">courses</h1>
-          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Alura - </strong>Sass e Compass: Descomplicando o CSS</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Alura - </strong>JavaScript : Programando na linguagem da web</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Alura - </strong>jQuery: Manipulação dinâmica de conteúdo</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Alura - </strong>jQuery I: Introdução à biblioteca campeã de JavaScript</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Code School - </strong>Front-end Foundations</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Code School  - </strong>JavaScript Road Trip Part 1</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Code School  - </strong>JavaScript Road Trip Part 2</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>Free Code Camp  - </strong>Currtent progress: Basic Algorith Section</h2>
         </article>
       </div>
     </div>
