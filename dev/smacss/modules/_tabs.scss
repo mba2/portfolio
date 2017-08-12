@@ -113,6 +113,18 @@
         }
 
         //SUBCOMPONENT MODIFIERS
+        &--xp {
+            @include breakpoint(min,568px) {
+                div {
+                    float: left;
+                    width: 49%;
+                    padding: 0 3%;
+                    &:first-of-type {
+                        clear: left;
+                    }
+                }
+            }
+        }
     }
 
     &-contentHeading {
@@ -142,15 +154,26 @@
         &:nth-child(2n+2) {
             clear: both;
         }
-
-        //SUBCOMPONENT MODIFIERS
-
         //SUBCOMPONENT CHILDREN
         strong {
             @include subtitleBorder;
             font-weight: 400;
             color: $blue;
         }
+
+        //SUBCOMPONENT MODIFIERS
+        &--xp {
+
+            @include breakpoint(min,568px) {
+                float: none;
+                width: 100%;
+            }
+
+            a {
+                display: inline-block;
+            }
+        }
+
     }
 
     &-mainContent {

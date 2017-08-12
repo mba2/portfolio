@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -9,6 +10,7 @@
 
   <title>Mario Brusarosco</title>
 </head>
+
 <body>
 
   <div class="l-wrapper-main">
@@ -37,7 +39,7 @@
       </div>
 
       <?php //require_once("./templates/breadcrumb");?>
-      
+
       <section class="personalData">
         <h1 class="personalData-name"><b>mario</b> brusarosco de almeida</h1>
         <article class="personalData-info">
@@ -50,7 +52,7 @@
         <article class="personalData-contact">
 
           <div class="personalData-line personalData-tel">
-              <a href="tel:11996303693" type="tel">
+            <a href="tel:11996303693" type="tel">
                   <i class="icon icon--tel">
                       <svg class="icon-svg icon-svg--tel" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="18px" height="31px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                       viewBox="0 0 18 31"
@@ -63,7 +65,7 @@
           </div>
 
           <div class="personalData-line personalData-email">
-              <a href="mailto:mariobrusarosco@gmail.com">
+            <a href="mailto:mariobrusarosco@gmail.com">
                   <i class="icon icon--email">
                       <svg class="icon-svg icon-svg--email" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="20px" height="14px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                       viewBox="0 0 20 15"
@@ -79,7 +81,7 @@
           </div>
 
           <div class="personalData-line personalData-git">
-              <a href="https://github.com/mariobrusarosco">
+            <a href="https://github.com/mariobrusarosco">
                 <i class="icon icon--git">
                   <svg class="icon-svg icon-svg--git" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="25px" height="24px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
                   viewBox="0 0 25 24"
@@ -102,64 +104,70 @@
             <div class="personalData-group personalData-group--education">
               <h2 class="personalData-subtitle personalData-subtitle--education"><span>systems analysis<span></h2>
               <h2 class="personalData-subtitle personalData-subtitle--education"><span>faculdade eniac - (2014 - 2016)</span></h2>
-            </div>
+  </div>
+  </article>
+
+  </section>
+
+  <section class="developerData">
+    <div class="tabs">
+      <nav class="tabs-nav">
+        <div class="tabs-tab tabs-tab--skills" data-tab-id="skills" data-state="is-active">
+          <span class- "tabs-title tabs-title--skills">skills</span>
+          <i class="tabs-arrow"></i>
+        </div>
+        <div class="tabs-tab tabs-tab--xp" data-tab-id="xp">
+          <span class- "tabs-title tabs-title--xp">experience</span>
+          <i class="tabs-arrow"></i>
+        </div>
+        <div class="tabs-tab tabs-tab--courses" data-tab-id="courses">
+          <span class- "tabs-title tabs-title--courses">courses</span>
+          <i class="tabs-arrow"></i>
+        </div>
+      </nav>
+      <div class="tabs-mainContent">
+        <article class="tabs-content tabs-content--skills" data-state="is-active" data-tab-id="skills">
+          <h1 class="tabs-title tabs-title--content">skills</h1>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders, variables, @if/else, @each & partials</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config
+            via SSH keys</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
+          <h2 class="tabs-contentHeading tabs-contentHeading--english"><strong>English - </strong>fluent</h2>
         </article>
 
-      </section>
-
-      <section class="developerData">
-        <div class="tabs">
-          <nav class="tabs-nav">
-            <div class="tabs-tab tabs-tab--skills" data-tab-id="skills" data-state="is-active">
-              <span class-"tabs-title tabs-title--skills">skills</span>
-              <i class="tabs-arrow"></i>
-            </div>
-            <div class="tabs-tab tabs-tab--xp" data-tab-id="xp">
-              <span class-"tabs-title tabs-title--xp">experience</span>
-              <i class="tabs-arrow"></i>
-            </div>
-            <div class="tabs-tab tabs-tab--courses" data-tab-id="courses">
-              <span class-"tabs-title tabs-title--courses">courses</span>
-              <i class="tabs-arrow"></i>
-            </div>
-          </nav>
-          <div class="tabs-mainContent">
-            <article class="tabs-content tabs-content--skills" data-state="is-active" data-tab-id="skills">
-              <h1 class="tabs-title tabs-title--content">skills</h1>
-              <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--css3"><strong>css3 - </strong>responsive design using media query or bootstrap grid</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--sass"><strong>SASS (SCSS) - </strong>mixins, placeholders,  variables, @if/else, @each & partials</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--smass"><strong>SMACSS - </strong>folder structure and naming convention</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--bem"><strong>BEM - </strong>naming convention</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--json"><strong>JSON - </strong>creation of objects and retrieving them with AJAX</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--git"><strong>Git - </strong>"branch", "fetch & rebase", "interactive rebase", "merge", "reset", "revert" and config via SSH keys</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--sql"><strong>SQL - </strong>MySQL - "INSERT", "UPDATE", "DELETE", "CREATE", "INNER JOIN" & "LEFT JOIN"</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--OOP"><strong>OOP - </strong>initial concepts applied on PHP</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--misc"><strong>MISC - </strong>basic FTP flow, basic linux commands</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--photoshop"><strong>Photoshop - </strong>retrieving images</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--english"><strong>English - </strong>fluent</h2>
-            </article>
-
-            <article class="tabs-content tabs-content--xp" data-tab-id="xp">
-              <h1 class="tabs-title tabs-title--content">experience</h1>
-              <h2 class="tabs-contentHeading tabs-contentHeading--"><strong>enext - </strong>front end dev</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--"><strong>FNAC - </strong><a href="www.fnac.com.br" target="_blank">www.fnac.com.br</a></h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--">* Ongoing maintainance on ecommerce stores <br/> * Landing Pages</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--"><strong>MR. CAT - </strong><a href="www.mrcat.com.br" target="_blank">www.mrcat.com.br</a></h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--"><strong>July 2017 - </strong> until present</h2>
-              <h2 class="tabs-contentHeading tabs-contentHeading--"><strong>MR. CAT - </strong><a href="www.mrcat.com.br" target="_blank">www.mrcat.com.br</a></h2>
-            </article>
-
-            <article class="tabs-content tabs-content--courses" data-tab-id="courses">
-              <h1 class="tabs-title tabs-title--content">courses</h1>
-              <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
-            </article>
+        <article class="tabs-content tabs-content--xp" data-tab-id="xp">
+          <h1 class="tabs-title tabs-title--content">experience</h1>
+          <div>
+            <h2 class="tabs-contentHeading tabs-contentHeading--xp"><strong>enext - </strong>front end dev</h2>
+            <h2 class="tabs-contentHeading tabs-contentHeading--xp"><strong>July 2017 - </strong> until present</h2>
+            <h2 class="tabs-contentHeading tabs-contentHeading--xp">* Ongoing maintainance on ecommerce stores <br/> * Landing Pages</h2>
           </div>
-        </div>
-      </section>
-    </main>
 
-    <button id="js_back-to-top" class="btn btn-back-to-top">
+          <div>
+            <h2 class="tabs-contentHeading tabs-contentHeading--xp"><strong>FNAC - </strong><a href="www.fnac.com.br" target="_blank">www.fnac.com.br</a></h2>
+            <h2 class="tabs-contentHeading tabs-contentHeading--xp"><strong>MR. CAT - </strong><a href="www.mrcat.com.br" target="_blank">www.mrcat.com.br</a></h2>
+          </div>
+          
+        </article>
+
+        <article class="tabs-content tabs-content--courses" data-tab-id="courses">
+          <h1 class="tabs-title tabs-title--content">courses</h1>
+          <h2 class="tabs-contentHeading tabs-contentHeading--html5"><strong>html 5 - </strong>semantic mark up</h2>
+        </article>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <button id="js_back-to-top" class="btn btn-back-to-top">
       <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40px" height="40px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
       viewBox="0 0 40 40" xmlns:xlink="http://www.w3.org/1999/xlink">
        <defs>
@@ -178,9 +186,10 @@
        </g>
       </svg>
     </button>
-    <?php include_once("./templates/footer.php"); ?>
+  <?php include_once("./templates/footer.php"); ?>
   </div>
 
   <script src="js/app.js"></script>
 </body>
+
 </html>
