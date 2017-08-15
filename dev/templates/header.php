@@ -21,10 +21,10 @@
             <span class="dropdown-arrow js-dropdown-arrow"></span>
             <ul class="dropdown dropdown-header">
               <li class="dropdown-item">
-                <a href="./syntax-guide" class="dropdown-link">syntax guide</a>
+                <a href="./code-help/intro" class="dropdown-link">code help</a>
               </li>
               <li class="dropdown-item">
-                <a href="./code-editor" class="dropdown-link">code-editor</a>
+                <a href="./code-editor/intro" class="dropdown-link">code editor</a>
               </li>
             </ul>
           </li>
