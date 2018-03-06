@@ -1,0 +1,88 @@
+.dropdown {
+    
+  visibility: hidden;
+  opacity: 0;
+  transition: customTrans(visibility, $time: .65s),
+              customTrans(opacity, $time: .65s);
+
+  @include breakpoint(min,667px) {
+    margin-top: 2px;
+  }
+  @include breakpoint(min,1024px) {
+    margin-top: 5px;
+  }
+        
+
+  // MODULE PSEUDO CLASSES , STATES, VARIATIONS
+  &-header {
+    position: absolute;
+    background: rgb(255, 255, 255);
+    top: calc(100% - 1px);
+    left: -4px;
+    width: calc(100% + 4px);
+    line-height: 60px;
+    border-left: 4px solid #fff;
+    
+    @include breakpoint(min,1024px) {
+      position: absolute;
+      width: 170px;
+      border-left: 0;
+      margin-top:5px;
+      left: 0;
+    }
+  }
+  // MODULE CHILD ELEMENTS
+  &-arrow {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: url(../img/mobile-dropdown-arrow.svg) no-repeat center 15px;
+    background-size: 20px auto;
+
+    transform: rotate(180deg);
+    cursor: pointer;
+
+    @include breakpoint(min,768px) {
+      background-position: center 25px;
+    }
+    
+    // HIDE THIS ELEMENT ON DESKTOP
+    @include breakpoint(min,1024px) {display: none;}
+
+    .menu-listItem.is-active & {
+      transform: rotate(0deg);
+    }
+  }
+
+  // .dropdown-item
+  &-item {
+    background-color: $darkBlue;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+
+    @include breakpoint(min,1024px) {
+      transition: customTrans(background-color),
+                  customTrans(color);
+    }
+    // .dropdown-item:first-child
+    &:first-child {
+      // border-top-width: 4px;
+    }
+    // .dropdown-item:hover
+    // .dropdown-item:active
+    &:hover,
+    &:active {
+      background-color: $pink;
+
+      color: #FFF;
+    }
+  }
+  // .dropdown-link
+  &-link {
+    font-weight: 700;
+  }
+}
