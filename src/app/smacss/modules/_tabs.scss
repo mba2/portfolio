@@ -57,14 +57,13 @@
     }
 
     &-title {
-        @extend .personalData-title;
+        &--content {
+            @extend .personalData-title;
 
-        @include breakpoint(min,568px) {
-            float: left;
-            padding: 0 3%;
-        }
-
-        @include breakpoint(min,768px) {
+            @include breakpoint(min,568px) {
+                float: left;
+                padding: 0 3%;
+            }
         }
         //SUBCOMPONENT MODIFIERS
     }
