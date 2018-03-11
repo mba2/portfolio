@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ResumeComponent } from './components/resume/resume.component';
 
 
 
@@ -18,12 +19,14 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     HomeComponent,
     NotFoundComponent,
-    HeaderComponent
+    HeaderComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot([
       { path : '', component: HomeComponent },
+      { path : 'resume', component: ResumeComponent },
       { path : '**', component: NotFoundComponent }
     ])
   ],
