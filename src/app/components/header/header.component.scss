@@ -1,3 +1,18 @@
-// @import '~app/smacss/base/import';
+@import '~app/smacss/base/palettes',
+  '~app/smacss/base/mixins',
+  '~app/smacss/base/placeholders',
+  '~app/smacss/base/animations';
 
-// @import '~app/smacss/layout/header';
+@import '~app/smacss/layout/header',
+  '~app/smacss/layout/wrapper';
+
+
+@import '~app/smacss/modules/menu',
+  '~app/smacss/modules/nav',
+  '~app/smacss/modules/btn',
+  '~app/smacss/modules/link',
+  '~app/smacss/modules/hambLine',
+  '~app/smacss/modules/logo',
+  '~app/smacss/modules/listItem',
+  '~app/smacss/modules/dropdown',
+  '~app/smacss/modules/progBar';
