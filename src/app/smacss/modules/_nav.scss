@@ -44,7 +44,7 @@
     transform: translate(0,0);
   }
 
-  body.menu-is-opened &{
+  &.menu-is-opened {
     opacity: 1;
     visibility: visible;
     transform: translate(0px,80px);

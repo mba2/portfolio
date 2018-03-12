@@ -12,6 +12,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DropdownItemDirective } from './directives/dropdown-item.directive';
 
 
 
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     NotFoundComponent,
     HeaderComponent,
     ResumeComponent,
-    FooterComponent
+    FooterComponent,
+    DropdownItemDirective
   ],
   imports: [
     BrowserModule,

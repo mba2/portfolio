@@ -53,28 +53,28 @@ var Header = {
   //     }
   },
   menu : {
-    toggleBehavior : function() {
-      document.querySelector("#js_headerMenuBtn").addEventListener("click",function(e){
-        document.querySelector("body").classList.toggle("menu-is-opened");
-      });
-    }
+    // toggleBehavior : function() {
+    //   document.querySelector("#js_headerMenuBtn").addEventListener("click",function(e){
+    //     document.querySelector("body").classList.toggle("menu-is-opened");
+    //   });
+    // }
   },
   
-  dropdown : function() {
-    var dropdowns = document.querySelectorAll(".js-dropdown-arrow");
-        dropdowns.forEach(function(node){
-          node.addEventListener("click", function(){
-            console.log(this);
-            this.parentNode.classList.toggle("is-active");
-          })
-        });
-    console.log(dropdowns);
-    console.log(typeof dropdowns);
-  },
+  // dropdown : function() {
+  //   var dropdowns = document.querySelectorAll(".js-dropdown-arrow");
+  //       dropdowns.forEach(function(node){
+  //         node.addEventListener("click", function(){
+  //           console.log(this);
+  //           this.parentNode.classList.toggle("is-active");
+  //         })
+  //       });
+  //   console.log(dropdowns);
+  //   console.log(typeof dropdowns);
+  // },
 
   initOnLoad : function() {
-    this.menu.toggleBehavior();
+    // this.menu.toggleBehavior();
     this.overlay();
-    this.dropdown();
+    // this.dropdown();
   }
 };
